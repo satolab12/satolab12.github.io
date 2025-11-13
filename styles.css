@@ -211,6 +211,11 @@ body {
   height: 16px;
   fill: currentColor;
 }
+.icon-link img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
 .icon-link:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-soft);
@@ -240,8 +245,9 @@ body {
 /* 写真 */
 .hero-photo {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;  /* ここを flex-end から変更 */
 }
+
 .hero-photo img {
   width: 130px;
   height: 130px;
