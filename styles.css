@@ -652,5 +652,24 @@ a:hover {
   color: #222 !important;     /* しっかり濃いグレー */
   font-weight: 500;           /* 少しだけ太くして視認性UP */
 }
+/* ===== NEW badge for News ===== */
+.news-badge {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #ef4444;        /* 赤系。#4f46e5 などに変更も可 */
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+/* ダークモードでも見えるように */
+@media (prefers-color-scheme: dark) {
+  .news-badge {
+    background: #f87171;      /* 明るめの赤 */
+  }
+}
 
 
