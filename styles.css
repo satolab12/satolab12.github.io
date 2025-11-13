@@ -608,3 +608,29 @@ a:hover {
   background: #020617;
   border-color: #1f2937;
 }
+
+/* ============================
+   Light theme 用のヘッダー & Hero 修正
+   ============================ */
+[data-theme="light"] .site-header {
+  background: rgba(247, 247, 249, 0.97);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+[data-theme="light"] .hero {
+  background: #ffffff;
+  color: var(--fg);
+}
+
+[data-theme="light"] .hero-badges span {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--muted);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+[data-theme="light"] .icon-link {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(148, 163, 184, 0.45);
+  color: var(--fg);
+}
+
