@@ -1,11 +1,12 @@
 :root {
-  --bg: #f9fafb;           /* ほんのり明るいグレー */
-  --fg: #111827;           /* 濃いめのダークグレー（視認性アップ） */
-  --muted: #6b7280;        /* 少し濃いサブテキスト */
-  --accent: #2563eb;
+  /* 全体を少しだけ明るいグレー背景＋濃い文字に統一 */
+  --bg: #f5f5f7;         /* ページ背景（ほぼ白） */
+  --fg: #111827;         /* 本文テキスト（かなり濃いグレー） */
+  --muted: #6b7280;      /* サブテキスト用 */
+  --accent: #2563eb;     /* ボタン・リンクの青 */
   --accent-soft: rgba(37, 99, 235, 0.10);
-  --border: #e5e7eb;       /* 少し明るい境界線 */
-  --shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.12);
+  --border: #e5e7eb;
+  --shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.10);
   --max-width: 980px;
   --radius-lg: 14px;
   --radius-md: 10px;
@@ -31,7 +32,7 @@ body {
     BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Meiryo", sans-serif;
   line-height: 1.7;
   color: var(--fg);
-  background: #f9fafb;     /* グラデーションをやめてフラットな背景に */
+  background: var(--bg);   /* ← ここ、グラデーションは完全に廃止してフラットに */
 }
 
 .page-main {
