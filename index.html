@@ -2,17 +2,18 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Your Name | Research</title>
+  <title>Satoshi Hashimoto | Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Researcher in Computer Vision / Machine Learning">
+  <meta name="description" content="Research page of Satoshi Hashimoto | Video Anomaly Detection, Generative Models, Computer Vision">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 <header class="site-header">
   <div class="container header-inner">
     <div class="brand">
-      <a href="#top" class="brand-main">Your Name</a>
-      <div class="brand-sub">研究者 / Researcher</div>
+      <a href="#top" class="brand-main">Satoshi Hashimoto</a>
+      <div class="brand-sub">橋本 慧志 / Researcher in AI & Computer Vision</div>
     </div>
     <nav class="nav">
       <a href="#about">About</a>
@@ -27,151 +28,218 @@
 </header>
 
 <main id="top">
-  <!-- Hero -->
+
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <h1>Your Name ｜ あなたの名前</h1>
+        <h1>Satoshi Hashimoto ｜ 橋本 慧志</h1>
+
         <p class="hero-affil">
-          Affiliation / 所属を書く（例：〇〇株式会社 研究開発本部, 〇〇大学 〇〇研究室）
+          研究員, 株式会社KDDI総合研究所（AI部門）
         </p>
+
         <p class="hero-role">
-          Researcher in Computer Vision, Machine Learning, and Video Anomaly Detection.
+          Video Anomaly Detection, Deep Generative Models, and Vision-based Safety Intelligence.
         </p>
+
         <div class="hero-links">
-          <a class="btn primary" href="#publications">Publications</a>
+          <a class="btn primary" href="#publications">Selected Publications</a>
           <a class="btn" href="#news">News</a>
           <a class="btn" href="cv.pdf">CV (PDF)</a>
         </div>
+
         <p class="hero-meta">
-          Email: <a href="mailto:you@example.com">you@example.com</a> ・
-          <a href="https://scholar.google.com/">Google Scholar</a> ・
-          <a href="https://github.com/yourname">GitHub</a> ・
-          <a href="https://x.com/">X</a>
+          Email: <a href="mailto:satoshi.umedalabo@gmail.com">satoshi.umedalabo@gmail.com</a> ・
+          <a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&hl=ja">Google Scholar</a> ・
+          <a href="https://github.com/satolab12">GitHub</a>
         </p>
       </div>
+
       <div class="hero-photo">
-        <!-- 顔写真を用意できたら avatar.jpg を差し替え -->
-        <img src="avatar.jpg" alt="Portrait" onerror="this.style.display='none'">
+        <!-- 写真があれば avatar.jpg を置く -->
+        <img src="avatar.jpg" alt="Portrait of Satoshi Hashimoto" onerror="this.style.display='none'">
       </div>
     </div>
   </section>
 
+
+  <!-- Main Columns -->
   <div class="container main-columns">
     <div class="main-left">
+
       <!-- About -->
       <section id="about">
         <h2>About</h2>
         <p>
-          ここに自己紹介を書きます。研究分野、現在の所属、これまでの経歴の簡単な要約など。
-          例：コンピュータビジョン、動画異常検知、生成モデルなどを専門とする研究者です。
+          橋本 慧志（Satoshi Hashimoto）です。動画異常検知（Video Anomaly Detection）と
+          深層生成モデル（GAN / Diffusion）を中心に、産業現場や公共空間における
+          “安全・安心” のためのAI研究に取り組んでいます。
+        </p>
+        <p>
+          中央大学 梅田研究室にて Spatio-Temporal GAN を基盤とした動画像異常検知手法を研究し、
+          U-Net Discriminator の中間層特徴融合を用いた新しい異常度推定法を開発しました。
+          現在は KDDI総合研究所 にて、生成モデル・弱教師あり学習・行動理解を統合した
+          次世代型異常検知手法の研究開発を進めています。
         </p>
       </section>
+
 
       <!-- Research Interests -->
       <section id="interests">
         <h2>Research Interests</h2>
         <ul class="tag-list">
-          <li>Video Anomaly Detection / Weakly-supervised VAD</li>
-          <li>Generative Models for Pseudo Anomalies</li>
-          <li>Multimodal Representation Learning</li>
-          <li>Continual Learning / Domain Adaptation</li>
+          <li>Video Anomaly Detection</li>
+          <li>Deep Generative Models (GAN / Diffusion)</li>
+          <li>Weakly-supervised Learning</li>
+          <li>Unsupervised Representation Learning</li>
+          <li>Safety-Oriented Computer Vision</li>
         </ul>
       </section>
+
 
       <!-- Experience -->
       <section id="experience">
         <h2>Experience</h2>
+
         <ul class="timeline">
           <li>
-            <div class="timeline-year">2024 –</div>
+            <div class="timeline-year">2021 – Present</div>
             <div class="timeline-body">
-              <div class="timeline-title">Researcher, Company / Lab Name</div>
-              <div class="timeline-desc">動画異常検知・生成モデルの研究開発。</div>
+              <div class="timeline-title">Researcher, KDDI Research, Inc. (AI Division)</div>
+              <div class="timeline-desc">
+                動画異常検知・行動理解・生成モデルを用いた安全AIの研究開発に従事。
+              </div>
             </div>
           </li>
+
           <li>
-            <div class="timeline-year">2021 – 2024</div>
+            <div class="timeline-year">– 2021</div>
             <div class="timeline-body">
-              <div class="timeline-title">Ph.D. Student / Postdoc, University Name</div>
-              <div class="timeline-desc">博士研究の概要など。</div>
+              <div class="timeline-title">Chuo University, Umeda Laboratory</div>
+              <div class="timeline-desc">
+                時空間GANを用いた異常検知に関する研究。中間層特徴融合による
+                動画像異常度推定手法を提案。
+              </div>
             </div>
           </li>
         </ul>
+
         <p class="small-note">
           詳細な職歴・学歴は CV を参照してください。
         </p>
       </section>
 
+
       <!-- Publications -->
       <section id="publications">
         <h2>Selected Publications</h2>
-        <p class="section-note">
-          *代表的な論文のみを掲載しています。フルリストは CV / Google Scholar を参照してください。*
-        </p>
+        <p class="section-note">*代表的な論文のみを掲載。</p>
+
         <ol class="pub-list">
+
           <li>
-            <span class="pub-title">Paper Title for PA-VAD (例)</span><br>
-            <span class="pub-authors"><b>Your Name</b>, Coauthor A, Coauthor B</span><br>
-            <span class="pub-venue">CVPR 2026 (under review)</span><br>
-            <span class="pub-links">
-              <a href="#">PDF</a> /
-              <a href="#">arXiv</a> /
-              <a href="#">Code</a> /
-              <a href="#">BibTeX</a>
-            </span>
+            <span class="pub-title">Pseudo-Anomaly Video Anomaly Detection (PA-VAD)</span><br>
+            <span class="pub-authors"><b>S. Hashimoto</b>, et al.</span><br>
+            <span class="pub-venue">CVPR 2026 (under review)</span>
           </li>
+
           <li>
             <span class="pub-title">CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles</span><br>
-            <span class="pub-authors"><b>Your Name</b>, Coauthor …</span><br>
-            <span class="pub-venue">WACV 2026</span><br>
-            <span class="pub-links">
-              <a href="#">PDF</a> /
-              <a href="#">Code</a>
-            </span>
+            <span class="pub-authors"><b>S. Hashimoto</b>, et al.</span><br>
+            <span class="pub-venue">WACV 2026</span>
           </li>
+
+          <li>
+            <span class="pub-title">
+              Video Anomaly Detection by Fusion of Middle Layer Features of U-Net Discriminator 
+              in Spatio-Temporal Generative Adversarial Networks
+            </span><br>
+            <span class="pub-authors"><b>S. Hashimoto</b>, K. Kudo, T. Takahashi, K. Umeda</span><br>
+            <span class="pub-venue">Journal of JSPE, Vol.87, No.12, 2021</span>
+          </li>
+
+          <li>
+            <span class="pub-title">
+              GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討
+            </span><br>
+            <span class="pub-authors"><b>橋本 慧志</b>, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+            <span class="pub-venue">精密工学会 サマーセミナー2020</span>
+          </li>
+
+          <li>
+            <span class="pub-title">
+              労働災害防止のための動画像を用いた深層学習による異常検知手法
+            </span><br>
+            <span class="pub-authors"><b>橋本 慧志</b>, 他</span><br>
+            <span class="pub-venue">2020</span>
+          </li>
+
+          <li>
+            <span class="pub-title">解説：動画像異常検知の最新動向</span><br>
+            <span class="pub-authors"><b>橋本 慧志</b>, 黒川茂莉</span><br>
+            <span class="pub-venue">電子情報通信学会誌, 108(6), 2025</span>
+          </li>
+
         </ol>
       </section>
+
 
       <!-- Awards -->
       <section id="awards">
         <h2>Awards</h2>
         <ul class="bullet-list">
-          <li>2025: Best Paper Award, Conference Name</li>
-          <li>2024: Research Grant, Organization Name</li>
+          <li>
+            <b>DIA2021 研究奨励賞</b><br>
+            「時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知」
+          </li>
+
+          <li>
+            <b>第34回 渋谷健一奨励賞</b>
+          </li>
+
+          <li>
+            <b>サマーセミナー2020 優秀発表賞</b><br>
+            「GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討」
+          </li>
         </ul>
       </section>
+
 
       <!-- Contact -->
       <section id="contact">
         <h2>Contact</h2>
         <p>
-          共同研究やご質問は、Email までお気軽にお問い合わせください。
+          研究に関するご相談・共同研究依頼などは、以下のメールアドレスへご連絡ください。
         </p>
         <p>
-          Email: <a href="mailto:you@example.com">you@example.com</a><br>
-          GitHub: <a href="https://github.com/yourname">https://github.com/yourname</a><br>
-          X: <a href="https://x.com/">@your_handle</a>
+          Email: <a href="mailto:satoshi.umedalabo@gmail.com">satoshi.umedalabo@gmail.com</a><br>
+          Google Scholar: <a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&hl=ja">
+          https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ</a><br>
+          GitHub: <a href="https://github.com/satolab12">https://github.com/satolab12</a>
         </p>
       </section>
+
     </div>
 
+
+    <!-- Right Sidebar -->
     <aside class="main-right">
-      <!-- News -->
       <section id="news">
         <h2>News</h2>
+
         <ul class="news-list">
           <li>
-            <span class="news-date">2025-11-10</span>
+            <span class="news-date">2025-11</span>
             <span class="news-body">PA-VAD を CVPR 2026 に投稿しました。</span>
           </li>
           <li>
-            <span class="news-date">2025-10-20</span>
+            <span class="news-date">2025-10</span>
             <span class="news-body">CADE が WACV 2026 に採択されました。</span>
           </li>
           <li>
-            <span class="news-date">2025-09-01</span>
-            <span class="news-body">新しい研究テーマ（動画疑似異常生成）を開始しました。</span>
+            <span class="news-date">2025-06</span>
+            <span class="news-body">「動画像異常検知の最新動向」（解説記事）が電子情報通信学会誌に掲載。</span>
           </li>
         </ul>
 
@@ -179,19 +247,24 @@
         <ul class="quick-links">
           <li><a href="#publications">Selected Publications</a></li>
           <li><a href="cv.pdf">Curriculum Vitae (PDF)</a></li>
-          <li><a href="https://scholar.google.com/">Google Scholar</a></li>
-          <li><a href="https://github.com/yourname">GitHub</a></li>
+          <li><a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&hl=ja">Google Scholar</a></li>
+          <li><a href="https://github.com/satolab12">GitHub</a></li>
         </ul>
+
       </section>
     </aside>
+
   </div>
 </main>
 
+
+<!-- Footer -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span>&copy; 2025 Your Name</span>
+    <span>&copy; 2025 Satoshi Hashimoto</span>
     <a href="#top" class="back-to-top">Back to top ↑</a>
   </div>
 </footer>
+
 </body>
 </html>
