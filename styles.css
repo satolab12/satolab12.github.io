@@ -1,11 +1,10 @@
-/* ===== 基本設定 ===== */
 :root {
-  --bg: #f7f7f9;
-  --fg: #202020;
-  --muted: #7a7a7a;
+  --bg: #f9fafb;           /* ほんのり明るいグレー */
+  --fg: #111827;           /* 濃いめのダークグレー（視認性アップ） */
+  --muted: #6b7280;        /* 少し濃いサブテキスト */
   --accent: #2563eb;
   --accent-soft: rgba(37, 99, 235, 0.10);
-  --border: #e0e0e0;
+  --border: #e5e7eb;       /* 少し明るい境界線 */
   --shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.12);
   --max-width: 980px;
   --radius-lg: 14px;
