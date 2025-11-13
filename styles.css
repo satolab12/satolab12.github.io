@@ -700,17 +700,17 @@ a:hover {
   #news .section-card,
   #awards .section-card,
   #news .container,
-  #awards .container {
+  /* #awards .container {
     color: #ffffff;
-  }
+  } */
 
   #news h2,
   #awards h2,
   #news .news-date,
   #news .news-body,
   #awards .bullet-list li,
-  #awards b {
+  /* #awards b {
     color: #ffffff;
-  }
+  } */
 }
 
