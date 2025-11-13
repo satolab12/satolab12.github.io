@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Satoshi Hashimoto | Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research page of Satoshi Hashimoto | Video Anomaly Detection, Generative Models, Computer Vision">
+  <meta name="description" content="Research page of Satoshi Hashimoto | Video Anomaly Detection, Generative Models, Computer Vision, Continual Learning">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,12 +16,12 @@
       <div class="brand-sub">橋本 慧志 / Researcher in AI & Computer Vision</div>
     </div>
     <nav class="nav">
-      <a href="#about">About</a>
       <a href="#interests">Research</a>
       <a href="#news">News</a>
       <a href="#experience">Experience</a>
       <a href="#publications">Publications</a>
       <a href="#awards">Awards</a>
+      <a href="#talks">Talks</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -40,20 +40,28 @@
         </p>
 
         <p class="hero-role">
-          Video Anomaly Detection, Deep Generative Models, and Vision-based Safety Intelligence.
+          Video Anomaly Detection, Deep Generative Models, Vision-Language Models, and Continual Learning.
         </p>
 
         <div class="hero-links">
-          <a class="btn primary" href="#publications">Selected Publications</a>
+          <a class="btn primary" href="#publications">Publications</a>
           <a class="btn" href="#news">News</a>
           <a class="btn" href="cv.pdf">CV (PDF)</a>
         </div>
 
-        <p class="hero-meta">
-          Email: <a href="mailto:satoshi.umedalabo@gmail.com">satoshi.umedalabo@gmail.com</a> ・
-          <a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&hl=ja">Google Scholar</a> ・
-          <a href="https://github.com/satolab12">GitHub</a>
-        </p>
+        <!-- アイコンリンク -->
+        <div class="hero-meta-icons">
+          <span class="hero-meta-label">Links</span>
+          <a class="icon-link icon-mail" href="mailto:satoshi.umedalabo@gmail.com" title="Email">
+            <span class="sr-only">Email</span>✉
+          </a>
+          <a class="icon-link icon-scholar" href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&hl=ja" title="Google Scholar">
+            <span class="sr-only">Google Scholar</span>GS
+          </a>
+          <a class="icon-link icon-github" href="https://github.com/satolab12" title="GitHub">
+            <span class="sr-only">GitHub</span>GH
+          </a>
+        </div>
       </div>
 
       <div class="hero-photo">
@@ -68,22 +76,7 @@
   <div class="container main-columns">
     <div class="main-left">
 
-      <!-- About -->
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          橋本 慧志（Satoshi Hashimoto）です。動画異常検知（Video Anomaly Detection）と
-          深層生成モデル（GAN / Diffusion）を中心に、産業現場や公共空間における
-          “安全・安心” のためのAI研究に取り組んでいます。
-        </p>
-        <p>
-          中央大学 梅田研究室にて Spatio-Temporal GAN を基盤とした動画像異常検知手法を研究し、
-          U-Net Discriminator の中間層特徴融合を用いた新しい異常度推定法を開発しました。
-          現在は KDDI総合研究所 にて、生成モデル・弱教師あり学習・行動理解を統合した
-          次世代型異常検知手法の研究開発を進めています。
-        </p>
-      </section>
-
+      <!-- About は削除済み -->
 
       <!-- Research Interests -->
       <section id="interests">
@@ -91,8 +84,9 @@
         <ul class="tag-list">
           <li>Video Anomaly Detection</li>
           <li>Deep Generative Models (GAN / Diffusion)</li>
-          <li>Weakly-supervised Learning</li>
-          <li>Unsupervised Representation Learning</li>
+          <li>Vision-Language Models</li>
+          <li>Weakly- / Unsupervised Learning</li>
+          <li>Continual Learning</li>
           <li>Safety-Oriented Computer Vision</li>
         </ul>
       </section>
@@ -106,9 +100,9 @@
           <li>
             <div class="timeline-year">2021 – Present</div>
             <div class="timeline-body">
-              <div class="timeline-title">Researcher, KDDI Research, Inc. (AI Division)</div>
+              <div class="timeline-title">研究員, 株式会社KDDI総合研究所 AI部門</div>
               <div class="timeline-desc">
-                動画異常検知・行動理解・生成モデルを用いた安全AIの研究開発に従事。
+                動画異常検知・行動理解・生成モデル・マルチモーダルAIを用いた安全・安心分野の研究開発。
               </div>
             </div>
           </li>
@@ -116,10 +110,10 @@
           <li>
             <div class="timeline-year">– 2021</div>
             <div class="timeline-body">
-              <div class="timeline-title">Chuo University, Umeda Laboratory</div>
+              <div class="timeline-title">中央大学 梅田研究室</div>
               <div class="timeline-desc">
-                時空間GANを用いた異常検知に関する研究。中間層特徴融合による
-                動画像異常度推定手法を提案。
+                時空間敵対的生成ネットワークに基づく動画像異常検知手法の研究。
+                U-Net Discriminator の中間層特徴融合による異常度推定法を提案。
               </div>
             </div>
           </li>
@@ -133,52 +127,183 @@
 
       <!-- Publications -->
       <section id="publications">
-        <h2>Selected Publications</h2>
-        <p class="section-note">*代表的な論文のみを掲載。</p>
+        <h2>Publications</h2>
 
         <ol class="pub-list">
 
+          <!-- 2025 -->
           <li>
-            <span class="pub-title">Pseudo-Anomaly Video Anomaly Detection (PA-VAD)</span><br>
-            <span class="pub-authors"><b>S. Hashimoto</b>, et al.</span><br>
-            <span class="pub-venue">CVPR 2026 (under review)</span>
-          </li>
-
-          <li>
-            <span class="pub-title">CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles</span><br>
-            <span class="pub-authors"><b>S. Hashimoto</b>, et al.</span><br>
-            <span class="pub-venue">WACV 2026</span>
+            <span class="pub-title">
+              分布外検知と継続学習の統合による段階的モデル成長に向けて
+            </span><br>
+            <span class="pub-authors">
+              鷄内朋也, 小西達也, Derda Kaymak, Bing Liu, 松本一則, 橋本慧志, 西村仁志, 黒川茂莉
+            </span><br>
+            <span class="pub-venue">
+              人工知能学会全国大会（JSAI）, 2025.
+            </span>
           </li>
 
           <li>
             <span class="pub-title">
-              Video Anomaly Detection by Fusion of Middle Layer Features of U-Net Discriminator 
-              in Spatio-Temporal Generative Adversarial Networks
+              SVD Training を用いた連合継続学習の検討と評価
             </span><br>
-            <span class="pub-authors"><b>S. Hashimoto</b>, K. Kudo, T. Takahashi, K. Umeda</span><br>
-            <span class="pub-venue">Journal of JSPE, Vol.87, No.12, 2021</span>
+            <span class="pub-authors">
+              松本一則, 黒川茂莉, 鷄内朋也, 橋本慧志, 西村仁志
+            </span><br>
+            <span class="pub-venue">
+              予測・推論・学習の理論と応用（IBISML）研究会, 2025.
+            </span>
+          </li>
+
+          <li>
+            <span class="pub-title">
+              動画像異常検知の最新動向
+            </span><br>
+            <span class="pub-authors">
+              橋本慧志, 黒川茂莉
+            </span><br>
+            <span class="pub-venue">
+              電子情報通信学会誌, 108(6), 2025.
+            </span>
+          </li>
+
+          <!-- 2024 -->
+          <li>
+            <span class="pub-title">
+              マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知
+            </span><br>
+            <span class="pub-authors">
+              橋本慧志, 西村仁志, 黒川茂莉
+            </span><br>
+            <span class="pub-venue">
+              ViEW 2024.
+            </span>
+          </li>
+
+          <!-- 2022 -->
+          <li>
+            <span class="pub-title">
+              Unsupervised Video Anomaly Detection in Traffic and Crowded Scenes
+            </span><br>
+            <span class="pub-authors">
+              Satoshi Hashimoto, Alessandro Moro, Kenichi Kudo, Takayuki Takahashi, Kazunori Umeda
+            </span><br>
+            <span class="pub-venue">
+              SII 2022, pp. 870–876.
+            </span>
+          </li>
+
+          <!-- 2021 -->
+          <li>
+            <span class="pub-title">
+              時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知
+            </span><br>
+            <span class="pub-authors">
+              橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇
+            </span><br>
+            <span class="pub-venue">
+              精密工学会誌, 87(12), 2021.
+            </span>
+          </li>
+
+          <li>
+            <span class="pub-title">
+              時空間敵対的生成ネットワークを用いた教師なし学習による動画像異常検知
+            </span><br>
+            <span class="pub-authors">
+              橋本慧志
+            </span><br>
+            <span class="pub-venue">
+              中央大学大学院 理工学研究科 精密工学専攻 学位論文, 2020年度.
+            </span>
+          </li>
+
+          <li>
+            <span class="pub-title">
+              敵対的生成ネットワークを用いた動画像異常検知における背景除去の有用性の検討
+            </span><br>
+            <span class="pub-authors">
+              塚越健太郎, 橋本慧志, 梅田和昇
+            </span><br>
+            <span class="pub-venue">
+              ロボティクス・メカトロニクス講演会（Robomech）, 2021.
+            </span>
+          </li>
+
+          <!-- 2020 -->
+          <li>
+            <span class="pub-title">
+              Anomaly Detection Based on Deep Learning Using Video for Prevention of Industrial Accidents
+            </span><br>
+            <span class="pub-authors">
+              Satoshi Hashimoto, Yonghoon Ji, Kenichi Kudo, Takayuki Takahashi, Kazunori Umeda
+            </span><br>
+            <span class="pub-venue">
+              CoRR, abs/2005.13734, 2020.
+            </span>
           </li>
 
           <li>
             <span class="pub-title">
               GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討
             </span><br>
-            <span class="pub-authors"><b>橋本 慧志</b>, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
-            <span class="pub-venue">精密工学会 サマーセミナー2020</span>
+            <span class="pub-authors">
+              橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇
+            </span><br>
+            <span class="pub-venue">
+              精密工学会 画像応用技術専門委員会 サマーセミナー2020 / 映像情報メディア学会技術報告, 2020.
+            </span>
+          </li>
+
+          <!-- Preprints / Under Review -->
+          <li>
+            <span class="pub-title">
+              Pseudo-Anomaly Video Anomaly Detection (PA-VAD)
+            </span><br>
+            <span class="pub-authors">
+              橋本慧志 ほか
+            </span><br>
+            <span class="pub-venue">
+              CVPR 2026 投稿中.
+            </span>
           </li>
 
           <li>
             <span class="pub-title">
-              労働災害防止のための動画像を用いた深層学習による異常検知手法
+              CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles
             </span><br>
-            <span class="pub-authors"><b>橋本 慧志</b>, 他</span><br>
-            <span class="pub-venue">2020</span>
+            <span class="pub-authors">
+              橋本慧志 ほか
+            </span><br>
+            <span class="pub-venue">
+              WACV 2026.
+            </span>
+          </li>
+
+          <!-- Early works -->
+          <li>
+            <span class="pub-title">
+              Model Predictive Control of Shallow Drowsiness: Improving Productivity of Office Workers
+            </span><br>
+            <span class="pub-authors">
+              Takuma Kogo, Masanori Tsujikawa, Yukihiro Kiuchi, Atsushi Nishino, Satoshi Hashimoto
+            </span><br>
+            <span class="pub-venue">
+              EMBC 2019.
+            </span>
           </li>
 
           <li>
-            <span class="pub-title">解説：動画像異常検知の最新動向</span><br>
-            <span class="pub-authors"><b>橋本 慧志</b>, 黒川茂莉</span><br>
-            <span class="pub-venue">電子情報通信学会誌, 108(6), 2025</span>
+            <span class="pub-title">
+              Drowsiness Estimation from Low-Frame-Rate Facial Videos using Eyelid Variability Features
+            </span><br>
+            <span class="pub-authors">
+              Masanori Tsujikawa, Yoshifumi Onishi, Yukihiro Kiuchi, Toshinobu Ogatsu, Atsushi Nishino, Satoshi Hashimoto
+            </span><br>
+            <span class="pub-venue">
+              EMBC 2018.
+            </span>
           </li>
 
         </ol>
@@ -201,6 +326,19 @@
           <li>
             <b>サマーセミナー2020 優秀発表賞</b><br>
             「GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討」
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- Talks -->
+      <section id="talks">
+        <h2>Talks</h2>
+        <ul class="bullet-list">
+          <li>
+            <b>マルチモーダルAIを用いたドラレコ映像からのヒヤリハット検知</b><br>
+            橋本慧志, 西村仁志<br>
+            東京農工大学 スマートモビリティ研究拠点シンポジウム, 2024.
           </li>
         </ul>
       </section>
@@ -239,13 +377,13 @@
           </li>
           <li>
             <span class="news-date">2025-06</span>
-            <span class="news-body">「動画像異常検知の最新動向」（解説記事）が電子情報通信学会誌に掲載。</span>
+            <span class="news-body">「動画像異常検知の最新動向」（解説記事）が電子情報通信学会誌に掲載されました。</span>
           </li>
         </ul>
 
         <h3 class="sidebar-heading">Quick Links</h3>
         <ul class="quick-links">
-          <li><a href="#publications">Selected Publications</a></li>
+          <li><a href="#publications">Publications</a></li>
           <li><a href="cv.pdf">Curriculum Vitae (PDF)</a></li>
           <li><a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&hl=ja">Google Scholar</a></li>
           <li><a href="https://github.com/satolab12">GitHub</a></li>
