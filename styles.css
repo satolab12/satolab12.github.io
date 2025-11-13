@@ -255,6 +255,21 @@ body {
   /* filter: invert(1) brightness(1.2); */
 }
 
+@media (prefers-color-scheme: light) {
+  .icon-link img[src$="github-mark-white.png"],
+  .icon-link img[src$="in.png"] {
+    filter: invert(0.9) contrast(1.1);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon-link img[src$="github-mark-white.png"],
+  .icon-link img[src$="in.png"] {
+    filter: none;
+  }
+}
+
+
 .icon-link:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-soft);
