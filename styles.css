@@ -41,7 +41,7 @@ body {
     Roboto, "Hiragino Sans", "Meiryo", sans-serif;
   line-height: 1.7;
   color: var(--fg);
-  background: radial-gradient(circle at top left, #ffffff, var(--bg));
+  background: var(--bg);
 }
 
 /* ===== 共通レイアウト ===== */
