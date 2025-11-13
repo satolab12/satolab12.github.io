@@ -1,12 +1,12 @@
-/* =========================================================
-   Base Theme Variables
-   ========================================================= */
+/* =========================================
+   カラーテーマ（ライト基準）
+   ========================================= */
 :root {
-  --bg: #f5f5f7;          /* ページ背景（明るい） */
-  --fg: #111827;          /* 本文テキスト（濃いグレー） */
-  --muted: #6b7280;       /* サブテキスト */
-  --accent: #2563eb;      /* 青のアクセント */
-  --accent-soft: rgba(37, 99, 235, 0.12);
+  --bg: #f5f5f7;         /* ページ背景（ほぼ白） */
+  --fg: #111827;         /* 本文テキスト（かなり濃いグレー） */
+  --muted: #4b5563;      /* サブテキスト用（やや濃いめに調整） */
+  --accent: #2563eb;     /* ボタン・リンクの青 */
+  --accent-soft: rgba(37, 99, 235, 0.10);
   --border: #e5e7eb;
   --shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.10);
   --max-width: 980px;
@@ -14,18 +14,34 @@
   --radius-md: 10px;
 }
 
-/* =========================================================
-   Base Reset
-   ========================================================= */
+/* data-theme="dark" が付いているときだけダークパレットに差し替え */
+[data-theme="dark"] {
+  --bg: #020617;
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #60a5fa;
+  --accent-soft: rgba(96, 165, 250, 0.20);
+  --border: #1f2937;
+  --shadow-soft: 0 20px 50px rgba(15, 23, 42, 0.7);
+}
+
+/* =========================================
+   ベース
+   ========================================= */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 
 body {
-  font-family: "Inter", "Noto Sans JP", system-ui, sans-serif;
+  font-family: "Inter", "Noto Sans JP", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Meiryo", sans-serif;
   line-height: 1.7;
-  font-size: 15px;  /* ← ほんの少し大きく */
+  font-size: 15px;          /* ほんの少しだけ大きく */
   color: var(--fg);
   background: var(--bg);
+}
+
+.page-main {
+  padding-bottom: 48px;
 }
 
 .container {
@@ -34,23 +50,18 @@ body {
   padding: 0 18px;
 }
 
-.page-main { padding-bottom: 48px; }
-
-/* =========================================================
-   Header
-   ========================================================= */
+/* =========================================
+   ヘッダー & ナビ（レイアウトは元に戻す）
+   ========================================= */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 40;
   backdrop-filter: blur(18px);
-  background: linear-gradient(
-    to bottom,
-    rgba(247,247,249,0.97),
-    rgba(247,247,249,0.92),
-    transparent
-  );
-  border-bottom: 1px solid rgba(148,163,184,0.25);
+  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.20), transparent 55%),
+              radial-gradient(circle at top right, rgba(56, 189, 248, 0.18), transparent 60%),
+              #020617;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
 }
 
 .header-inner {
@@ -58,148 +69,236 @@ body {
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
-  padding: 12px 18px 10px;
+  padding: 10px 18px 8px;
 }
-
 .brand-main {
-  font-size: 19px; /* 18→19 */
   font-weight: 700;
-  color: var(--fg);
+  font-size: 18px;
+  color: #f9fafb;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 .brand-sub {
   font-size: 12px;
-  color: var(--muted);
+  color: #cbd5f5;
+  margin-top: 2px;
 }
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  font-size: 14px; /* 13→14 */
+  font-size: 13px;
 }
 .nav a {
-  padding: 4px 10px;
-  color: var(--muted);
-  border-radius: 999px;
+  color: #cbd5f5;
   text-decoration: none;
-  transition: 0.15s ease;
+  padding: 4px 10px;
+  border-radius: 999px;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease;
 }
 .nav a:hover {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: rgba(148, 163, 184, 0.25);
+  color: #e5e7eb;
+  transform: translateY(-1px);
 }
 
-/* =========================================================
-   Theme Toggle Button
-   ========================================================= */
+/* ダーク/ライト切替ボタン */
 .theme-toggle {
   margin-left: 8px;
-  padding: 6px 10px;
+  padding: 4px 10px;
   border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.96);
-  font-size: 15px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: transparent;
+  color: #e5e7eb;
+  font-size: 12px;
   cursor: pointer;
-  transition: 0.15s ease;
 }
 .theme-toggle:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-soft);
+  background: rgba(148, 163, 184, 0.25);
 }
 
-/* =========================================================
-   Hero
-   ========================================================= */
-.hero { padding: 26px 0 20px; }
-
+/* =========================================
+   Hero（レイアウト / 余白は元デザイン）
+   ========================================= */
+.hero {
+  padding: 26px 0 18px;
+  background: radial-gradient(900px 600px at 0% 0%, rgba(37, 99, 235, 0.35), transparent 60%),
+              radial-gradient(900px 600px at 100% -10%, rgba(6, 182, 212, 0.35), transparent 70%),
+              #020617;
+  color: #e5e7eb;
+}
 .hero-inner {
   display: grid;
   grid-template-columns: auto minmax(0, 1.6fr);
-  align-items: center;
   gap: 24px;
+  align-items: center;
 }
-
 .hero-photo img {
   width: 140px;
   height: 140px;
   border-radius: 32px;
   object-fit: cover;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
 }
 
 .hero-text h1 {
   margin: 0 0 8px;
-  font-size: 30px; /* 28→30 */
+  font-size: 28px;
+  letter-spacing: 0.03em;
 }
-
 .hero-affil {
-  font-size: 15px;
-  margin-bottom: 4px;
-  color: var(--muted);
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #cbd5f5;
 }
-
 .hero-role {
-  font-size: 15px;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #e5e7eb;
 }
 
-/* =========================================================
-   Icons
-   ========================================================= */
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.hero-badges span {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.hero-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 18px;
+}
+
+/* ボタン */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  font-size: 13px;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.5);
+  transition:
+    background 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.1s ease,
+    border-color 0.15s ease;
+}
+.btn.primary {
+  border-color: #60a5fa;
+  background: #60a5fa;
+  color: #020617;
+}
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* アイコンリンク（元の並びに戻す） */
+.hero-meta-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .icon-link {
   width: 32px;
   height: 32px;
   border-radius: 999px;
-  border: 1px solid var(--border);
-  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.5);
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  box-shadow: 0 1px 3px rgba(15,23,42,0.12);
-  transition: 0.15s ease;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 15px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.7);
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background 0.15s ease;
+}
+.icon-link img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* ライトテーマのときだけ白アイコンを反転して見えるように */
+[data-theme="light"] .icon-link img[src$="github-mark-white.png"],
+[data-theme="light"] .icon-link img[src$="in.png"] {
+  filter: invert(0.9) contrast(1.1);
+}
+/* ダークではそのまま */
+[data-theme="dark"] .icon-link img[src$="github-mark-white.png"],
+[data-theme="dark"] .icon-link img[src$="in.png"] {
+  filter: none;
 }
 
 .icon-link:hover {
   transform: translateY(-1px);
-  border-color: var(--accent);
-  background: #ffffff;
-}
-
-.icon-link img {
-  width: 18px;
-  height: 18px;
-}
-
-/* ライトテーマでは白アイコンを反転 */
-html[data-theme="light"] .icon-link img[src$="github-mark-white.png"],
-html[data-theme="light"] .icon-link img[src$="in.png"] {
-  filter: invert(0.9) contrast(1.1);
-}
-
-/* ダークテーマではそのまま */
-html[data-theme="dark"] .icon-link img[src$="github-mark-white.png"],
-html[data-theme="dark"] .icon-link img[src$="in.png"] {
-  filter: none;
-}
-
-/* =========================================================
-   Sections
-   ========================================================= */
-.section { padding: 20px 0 8px; }
-
-.section-card .container {
-  padding: 14px 18px 12px;
-  background: rgba(255,255,255,0.97);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
   box-shadow: var(--shadow-soft);
+  border-color: #60a5fa;
+  background: #0b1120;
 }
 
+/* スクリーンリーダー用 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* =========================================
+   セクション共通
+   ========================================= */
+.section {
+  padding: 20px 0 8px;
+}
+.section-card {
+  padding: 8px 0;
+}
+.section-card .container {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border);
+}
+
+/* 見出し */
 h2 {
+  position: relative;
   margin: 0 0 14px;
   font-size: 18px;
-  position: relative;
+  letter-spacing: 0.06em;
 }
 h2::after {
   content: "";
@@ -211,10 +310,11 @@ h2::after {
   border-radius: 999px;
   background: linear-gradient(to right, var(--accent), transparent);
 }
+section p { margin: 0 0 8px; }
 
-/* =========================================================
-   News
-   ========================================================= */
+/* =========================================
+   News（行間など元のまま）
+   ========================================= */
 .news-list {
   list-style: none;
   padding-left: 0;
@@ -222,125 +322,289 @@ h2::after {
 }
 .news-list li {
   padding: 6px 0;
-  border-bottom: 1px dashed rgba(148,163,184,0.4);
+  border-bottom: 1px dashed rgba(148, 163, 184, 0.4);
+}
+.news-list li:last-child {
+  border-bottom: none;
 }
 .news-date {
-  font-size: 13px;
+  display: block;
+  font-size: 12px;
   color: var(--muted);
 }
 .news-body {
-  font-size: 14px;
+  display: block;
+  font-size: 13px;
 }
 
-/* =========================================================
-   Awards / Talks
-   ========================================================= */
+/* =========================================
+   Awards / Talks 等
+   ========================================= */
 .bullet-list {
   padding-left: 18px;
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-/* =========================================================
-   Two Columns
-   ========================================================= */
+/* =========================================
+   2カラム（Interests + Experience / Profile）
+   ========================================= */
 .two-columns {
   display: grid;
-  grid-template-columns: minmax(0,1.7fr) minmax(0,1fr);
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
   gap: 26px;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+.col-left > section {
+  margin-bottom: 26px;
+}
+
+/* Research Interests（タグ表示） */
+.tag-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tag-list li {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Experience timeline（縦タイムラインに戻す） */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  border-left: 2px solid var(--border);
+  margin-left: 6px;
+}
+.timeline li {
+  position: relative;
+  padding: 0 0 16px 14px;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+.timeline-year {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--muted);
+}
+.timeline-title {
+  font-size: 13px;
+  margin-top: 2px;
+}
+.timeline-desc {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* 右カラム：プロフィール＋リンク */
+.col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .profile-card {
   padding: 14px 14px 12px;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.97);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
   text-align: center;
 }
+.profile-photo2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.profile-photo2 img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+.profile-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.profile-role {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.profile-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
 
-/* =========================================================
-   Publications
-   ========================================================= */
+/* Quick Links カード */
+.quick-card {
+  padding: 10px 12px 8px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+}
+.sidebar-heading {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.quick-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 12px;
+}
+.quick-links li {
+  margin-bottom: 4px;
+}
+.quick-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   Publications（フォント小さめのまま）
+   ========================================= */
 .pub-list {
   padding-left: 20px;
-  font-size: 14px;
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+.pub-list li {
+  margin-bottom: 10px;
+}
+.pub-title {
+  font-weight: 600;
 }
 .pub-authors,
 .pub-venue {
-  font-size: 13px;
-  color: var(--muted);
-}
-
-/* =========================================================
-   Footer
-   ========================================================= */
-.site-footer {
-  margin-top: 24px;
-  padding: 12px 0 18px;
   font-size: 12px;
   color: var(--muted);
-  border-top: 1px solid rgba(148,163,184,0.3);
 }
 
+/* =========================================
+   Contact
+   ========================================= */
+#contact p {
+  font-size: 13px;
+}
+
+/* =========================================
+   フッター
+   ========================================= */
+.site-footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  padding: 12px 0 18px;
+  font-size: 11px;
+  color: var(--muted);
+}
 .footer-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+}
+.back-to-top {
+  color: var(--muted);
+  text-decoration: none;
+}
+.back-to-top:hover {
+  color: var(--accent);
 }
 
-/* =========================================================
-   Responsive
-   ========================================================= */
+/* 共通リンク */
+a {
+  color: var(--accent);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   レスポンシブ
+   ========================================= */
 @media (max-width: 840px) {
   .hero-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero-photo {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-photo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .two-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .profile-card {
+    max-width: 340px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 520px) {
-  .header-inner { flex-direction: column; }
-  .nav { justify-content: flex-start; }
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav {
+    justify-content: flex-start;
+  }
+  .hero-text h1 {
+    font-size: 24px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
 
-/* =========================================================
-   Dark Theme Override
-   ========================================================= */
-html[data-theme="dark"] {
-  --bg: #020617;
-  --fg: #e5e7eb;
-  --muted: #cbd5f5;
-  --accent: #60a5fa;
-  --accent-soft: rgba(96,165,250,0.18);
-  --border: #1e293b;
-  --shadow-soft: 0 20px 45px rgba(15,23,42,0.9);
+/* =========================================
+   Dark theme で News / Awards を見やすく
+   （テキストをしっかり白に）
+   ========================================= */
+[data-theme="dark"] #news,
+[data-theme="dark"] #awards {
+  color: #ffffff;
 }
-
-html[data-theme="dark"] body {
-  background: var(--bg);
-  color: var(--fg);
+[data-theme="dark"] #news h2,
+[data-theme="dark"] #awards h2,
+[data-theme="dark"] #news .news-date,
+[data-theme="dark"] #news .news-body,
+[data-theme="dark"] #awards .bullet-list li,
+[data-theme="dark"] #awards b {
+  color: #ffffff;
 }
-
-html[data-theme="dark"] .site-header {
-  background: radial-gradient(circle at top, #020617 0%, #020617 45%, transparent 100%);
-}
-
-html[data-theme="dark"] .section-card .container,
-html[data-theme="dark"] .profile-card {
-  background: #0b1120;
-  border-color: var(--border);
-  box-shadow: var(--shadow-soft);
-}
-
-/* News / Awards テキストを白に固定 */
-html[data-theme="dark"] #news,
-html[data-theme="dark"] #awards,
-html[data-theme="dark"] #news .container,
-html[data-theme="dark"] #awards .container,
-html[data-theme="dark"] #news h2,
-html[data-theme="dark"] #awards h2,
-html[data-theme="dark"] #news .news-date,
-html[data-theme="dark"] #news .news-body,
-html[data-theme="dark"] #awards .bullet-list li {
-  color: #ffffff !important;
+[data-theme="dark"] .section-card .container,
+[data-theme="dark"] .profile-card,
+[data-theme="dark"] .quick-card {
+  background: #020617;
+  border-color: #1f2937;
 }
