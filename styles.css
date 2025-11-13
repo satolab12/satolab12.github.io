@@ -252,7 +252,7 @@ body {
   height: 18px;
   display: block;
   /* ライトテーマでは白アイコンを反転して黒っぽくする */
-  filter: invert(1) brightness(1.2);
+  /* filter: invert(1) brightness(1.2); */
 }
 
 .icon-link:hover {
