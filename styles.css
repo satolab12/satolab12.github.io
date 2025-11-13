@@ -607,3 +607,28 @@ a:hover {
     padding: 6px 12px;
   }
 }
+
+/* ===== Dark mode: strengthen text contrast ===== */
+@media (prefers-color-scheme: dark) {
+
+  /* カード内の全テキストを白に */
+  #news,
+  #awards,
+  #news .section-card,
+  #awards .section-card,
+  #news .container,
+  #awards .container {
+    color: #ffffff !important;
+  }
+
+  /* 見出し・日付・本文すべて白に */
+  #news h2,
+  #awards h2,
+  #news .news-date,
+  #news .news-body,
+  #awards .bullet-list li,
+  #awards b {
+    color: #ffffff !important;
+  }
+}
+
