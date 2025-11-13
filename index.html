@@ -5,12 +5,10 @@
   <title>Satoshi Hashimoto | Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Research page of Satoshi Hashimoto | Video Anomaly Detection, Generative Models, Computer Vision, Continual Learning">
-
-  <!-- 洗練されたフォント（Inter + Noto Sans JP） -->
+  <!-- モダンなフォント（Inter）を使用 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -33,20 +31,20 @@
   </div>
 </header>
 
-<main id="top">
+<main id="top" class="page-main">
 
-  <!-- Hero: 左に顔写真 / 右にプロフィール -->
+  <!-- ===== Hero：写真＋プロフィール（横並び） ===== -->
   <section class="hero">
     <div class="container hero-inner">
 
-      <!-- 左：写真 -->
+      <!-- 左：顔写真 -->
       <div class="hero-photo">
         <img src="img/1659105172847.jpg"
              alt="Portrait of Satoshi Hashimoto"
              onerror="this.style.display='none'">
       </div>
 
-      <!-- 右：名前・所属・ボタン・アイコン -->
+      <!-- 右：名前・所属・リンク -->
       <div class="hero-text">
         <h1>Satoshi Hashimoto ｜ 橋本 慧志</h1>
 
@@ -55,295 +53,335 @@
         </p>
 
         <p class="hero-role">
-          Video Anomaly Detection, Deep Generative Models, Vision-Language Models, and Continual Learning.
+          Video Anomaly Detection, Deep Generative Models, Vision-Language Models, Continual Learning, and Safety-Oriented Computer Vision.
         </p>
 
-        <div class="hero-links">
-          <a class="btn primary" href="#news">News</a>
-          <a class="btn" href="#publications">Publications</a>
+        <div class="hero-badges">
+          <span>Video Anomaly Detection</span>
+          <span>Generative Models</span>
+          <span>Multimodal AI</span>
         </div>
 
-        <div class="hero-meta-icons">
-          <span class="hero-meta-label">Links</span>
+        <div class="hero-links-row">
+          <div class="hero-links">
+            <a class="btn primary" href="#news">News</a>
+            <a class="btn" href="#publications">Publications</a>
+          </div>
 
-          <!-- Email -->
-          <a class="icon-link" href="mailto:satoshi.umedalabo@gmail.com" title="Email">
-            <span class="sr-only">Email</span>✉
-          </a>
-
-          <!-- Google Scholar -->
-          <a class="icon-link" href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja" title="Google Scholar">
-            <span class="sr-only">Google Scholar</span>
-            <img src="img/sc.png" alt="Google Scholar">
-          </a>
-
-          <!-- GitHub -->
-          <a class="icon-link" href="https://github.com/satolab12" title="GitHub">
-            <span class="sr-only">GitHub</span>
-            <img src="img/github-mark-white.png" alt="GitHub">
-          </a>
-
-          <!-- LinkedIn -->
-          <a class="icon-link" href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/" title="LinkedIn">
-            <span class="sr-only">LinkedIn</span>
-            <img src="img/in.png" alt="LinkedIn">
-          </a>
+          <div class="hero-meta-icons">
+            <a class="icon-link" href="mailto:satoshi.umedalabo@gmail.com" title="Email">
+              <span class="sr-only">Email</span>✉
+            </a>
+            <a class="icon-link" href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja" title="Google Scholar">
+              <span class="sr-only">Google Scholar</span>
+              <img src="img/sc.png" alt="Google Scholar">
+            </a>
+            <a class="icon-link" href="https://github.com/satolab12" title="GitHub">
+              <span class="sr-only">GitHub</span>
+              <img src="img/github-mark-white.png" alt="GitHub">
+            </a>
+            <a class="icon-link" href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/" title="LinkedIn">
+              <span class="sr-only">LinkedIn</span>
+              <img src="img/in.png" alt="LinkedIn">
+            </a>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </section>
 
-  <!-- News: トップのトピックとして Hero のすぐ下に -->
-  <section id="news" class="news-main">
+  <!-- ===== News：トップ直下のトピック ===== -->
+  <section id="news" class="section-card">
     <div class="container">
-      <div class="card">
-        <h2>News</h2>
-        <ul class="news-list">
-          <li>
-            <span class="news-date">2025-11</span>
-            <span class="news-body">
-              主著論文 "CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles" が WACV 2026 に採択されました。
-            </span>
-          </li>
-          <li>
-            <span class="news-date">2025-06</span>
-            <span class="news-body">
-              解説記事「動画像異常検知の最新動向」が電子情報通信学会誌に掲載されました。
-            </span>
-          </li>
-        </ul>
-      </div>
+      <h2>News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">2025-11</span>
+          <span class="news-body">
+            主著論文 "CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles" が WACV 2026 に採択されました。
+          </span>
+        </li>
+        <li>
+          <span class="news-date">2025-06</span>
+          <span class="news-body">
+            主著の解説記事「動画像異常検知の最新動向」が電子情報通信学会誌に掲載されました。
+          </span>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- Awards: News のすぐ下 -->
-  <section id="awards" class="awards-main">
+  <!-- ===== Awards：News の次 ===== -->
+  <section id="awards" class="section-card">
     <div class="container">
-      <div class="card">
-        <h2>Awards</h2>
-        <ul class="bullet-list">
-          <li>
-            <b>動的画像処理実利用化ワークショップ DIA2021 研究奨励賞</b><br>
-            「時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知」
-          </li>
-          <li>
-            <b>中央大学 第34回 渋谷健一奨励賞</b>
-          </li>
-          <li>
-            <b>精密工学会画像応用技術専門委員会サマーセミナー2020 優秀発表賞</b><br>
-            「GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討」
-          </li>
-        </ul>
-      </div>
+      <h2>Awards</h2>
+      <ul class="bullet-list">
+        <li>
+          <b>動的画像処理実利用化ワークショップ DIA2021 研究奨励賞</b><br>
+          「時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知」
+        </li>
+        <li>
+          <b>中央大学 第34回 渋谷健一奨励賞</b>
+        </li>
+        <li>
+          <b>精密工学会画像応用技術専門委員会サマーセミナー2020 優秀発表賞</b><br>
+          「GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討」
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- 下層コンテンツ：左カラムに中身 / 右はクイックリンクだけ -->
-  <div class="container main-columns">
-    <div class="main-left">
+  <!-- ===== Research Interests & Experience：2カラム ===== -->
+  <section class="section">
+    <div class="container two-columns">
+      <div class="col-left">
 
-      <!-- Research Interests -->
-      <section id="interests">
-        <h2>Research Interests</h2>
-        <ul class="tag-list">
-          <li>Video Anomaly Detection</li>
-          <li>Deep Generative Models (GAN / Diffusion)</li>
-          <li>Vision-Language Models</li>
-          <li>Weakly- / Unsupervised Learning</li>
-          <li>Continual Learning</li>
-        </ul>
-      </section>
+        <!-- Research Interests -->
+        <section id="interests">
+          <h2>Research Interests</h2>
+          <ul class="tag-list">
+            <li>Video Anomaly Detection</li>
+            <li>Deep Generative Models (GAN / Diffusion)</li>
+            <li>Vision-Language Models</li>
+            <li>Weakly- / Unsupervised Learning</li>
+            <li>Continual Learning</li>
+            <li>Safety-Oriented Computer Vision</li>
+          </ul>
+        </section>
 
-      <!-- Experience -->
-      <section id="experience">
-        <h2>Experience</h2>
+        <!-- Experience -->
+        <section id="experience">
+          <h2>Experience</h2>
 
-        <ul class="timeline">
-          <li>
-            <div class="timeline-year">2024 – Present</div>
-            <div class="timeline-body">
-              <div class="timeline-title">株式会社KDDI総合研究所（出向）</div>
-              <div class="timeline-desc">
-                動画異常検知・行動理解・生成モデル・マルチモーダルAIを用いた異常検知技術の研究開発。
+          <ul class="timeline">
+            <li>
+              <div class="timeline-year">2024 – Present</div>
+              <div class="timeline-body">
+                <div class="timeline-title">株式会社KDDI総合研究所（出向）</div>
+                <div class="timeline-desc">
+                  動画異常検知・行動理解・生成モデル・マルチモーダルAIを用いた異常検知技術の研究開発。
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li>
-            <div class="timeline-year">2021 – Present</div>
-            <div class="timeline-body">
-              <div class="timeline-title">KDDI株式会社</div>
-              <div class="timeline-desc">
-                2024–：先端技術統括本部にて研究開発に従事。<br>
-                2021–2024：ゼロトラストや5Gネットワークに関する大手法人顧客担当のプロダクトエンジニア。
+            <li>
+              <div class="timeline-year">2021 – Present</div>
+              <div class="timeline-body">
+                <div class="timeline-title">KDDI株式会社</div>
+                <div class="timeline-desc">
+                  2024–：先端技術統括本部にて研究開発に従事。<br>
+                  2021–2024：ゼロトラストや5Gネットワークに関する大手法人顧客担当のプロダクトエンジニア。
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li>
-            <div class="timeline-year">2019 – 2021</div>
-            <div class="timeline-body">
-              <div class="timeline-title">中央大学 理工学研究科 精密工学専攻</div>
-              <div class="timeline-desc">
-                知的計測システム研究室所属。自律移動ロボットの位置推定や生成モデルを用いた異常検知技術の研究に従事。
+            <li>
+              <div class="timeline-year">2019 – 2021</div>
+              <div class="timeline-body">
+                <div class="timeline-title">中央大学 理工学研究科 精密工学専攻</div>
+                <div class="timeline-desc">
+                  知的計測システム研究室所属。自律移動ロボットの位置推定や生成モデルを用いた異常検知技術の研究に従事。
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </section>
+            </li>
+          </ul>
 
-      <!-- Publications -->
-      <section id="publications">
-        <h2>Publications</h2>
+        </section>
+      </div>
 
-        <ol class="pub-list">
-          <!-- 2026 -->
-          <li>
-            <span class="pub-title">CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles</span><br>
-            <span class="pub-authors">
-              Satoshi Hashimoto, Tatsuya Konishi, Tomoya Kaichi, Kazunori Matsumoto, Mori Kurokawa
-            </span><br>
-            <span class="pub-venue">
-              IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026.03.
-            </span>
-          </li>
+      <!-- 右カラム：簡易プロフィール＋クイックリンク -->
+      <aside class="col-right">
+        <section class="profile-card">
+          <div class="profile-photo">
+            <img src="img/1659105172847.jpg" alt="Portrait of Satoshi Hashimoto" onerror="this.style.display='none'">
+          </div>
+          <div class="profile-name">Satoshi Hashimoto</div>
+          <div class="profile-role">Researcher, KDDI / KDDI Research</div>
+          <div class="profile-icons">
+            <a class="icon-link" href="mailto:satoshi.umedalabo@gmail.com" title="Email">
+              <span class="sr-only">Email</span>✉
+            </a>
+            <a class="icon-link" href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja" title="Google Scholar">
+              <span class="sr-only">Google Scholar</span>
+              <img src="img/sc.png" alt="Google Scholar">
+            </a>
+            <a class="icon-link" href="https://github.com/satolab12" title="GitHub">
+              <span class="sr-only">GitHub</span>
+              <img src="img/github-mark-white.png" alt="GitHub">
+            </a>
+            <a class="icon-link" href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/" title="LinkedIn">
+              <span class="sr-only">LinkedIn</span>
+              <img src="img/in.png" alt="LinkedIn">
+            </a>
+          </div>
+          <div class="profile-links">
+            <a href="#publications">View publications →</a>
+          </div>
+        </section>
 
-          <!-- 2025 -->
-          <li>
-            <span class="pub-title">動画像異常検知の最新動向</span><br>
-            <span class="pub-authors">橋本慧志, 黒川茂莉</span><br>
-            <span class="pub-venue">
-              電子情報通信学会誌, 108(6), pp.544–549, 2025.06.
-            </span>
-          </li>
-
-          <li>
-            <span class="pub-title">分布外検知と継続学習の統合による段階的モデル成長に向けて</span><br>
-            <span class="pub-authors">
-              鷄内朋也, 小西達也, Derda Kaymak, Bing Liu, 松本一則, 橋本慧志, 西村仁志, 黒川茂莉
-            </span><br>
-            <span class="pub-venue">人工知能学会全国大会（JSAI）, 2025.</span>
-          </li>
-
-          <li>
-            <span class="pub-title">SVD Training を用いた連合継続学習の検討と評価</span><br>
-            <span class="pub-authors">
-              松本一則, 黒川茂莉, 鷄内朋也, 橋本慧志, 西村仁志
-            </span><br>
-            <span class="pub-venue">IBISML 研究会, 2025.</span>
-          </li>
-
-          <!-- 2024 -->
-          <li>
-            <span class="pub-title">マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知</span><br>
-            <span class="pub-authors">橋本慧志, 西村仁志, 黒川茂莉</span><br>
-            <span class="pub-venue">ビジョン技術の実利用ワークショップ ViEW2024, 2024.11.</span>
-          </li>
-
-          <li>
-            <span class="pub-title">交通ヒヤリハット検知のための拡散モデルを用いた動画データ拡張に関する検討</span><br>
-            <span class="pub-authors">西村仁志, 橋本慧志, 黒川茂莉</span><br>
-            <span class="pub-venue">映像情報メディア学会技術報告 ME研究会, 2024.09.</span>
-          </li>
-
-          <!-- 2022 -->
-          <li>
-            <span class="pub-title">Unsupervised Video Anomaly Detection in Traffic and Crowded Scenes</span><br>
-            <span class="pub-authors">
-              Satoshi Hashimoto, Alessandro Moro, Kenichi Kudo, Takayuki Takahashi, Kazunori Umeda
-            </span><br>
-            <span class="pub-venue">
-              IEEE/SICE International Symposium on System Integration (SII), pp.870–876, 2022.
-            </span>
-          </li>
-
-          <!-- 2021 -->
-          <li>
-            <span class="pub-title">時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知</span><br>
-            <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
-            <span class="pub-venue">
-              精密工学会誌, 87(12), pp.959–964, 2021.12.
-            </span>
-          </li>
-
-          <li>
-            <span class="pub-title">時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知</span><br>
-            <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
-            <span class="pub-venue">動的画像処理実利用化ワークショップ DIA2021, 2021.03.</span>
-          </li>
-
-          <!-- 2020 -->
-          <li>
-            <span class="pub-title">時空間敵対的生成ネットワークを用いた教師なし学習による動画像異常検知</span><br>
-            <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
-            <span class="pub-venue">ビジョン技術の実利用ワークショップ ViEW2020, 2020.12.</span>
-          </li>
-
-          <li>
-            <span class="pub-title">
-              GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討
-            </span><br>
-            <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
-            <span class="pub-venue">
-              精密工学会画像応用技術専門委員会サマーセミナー2020, 2020.09.
-            </span>
-          </li>
-
-          <!-- 2019 -->
-          <li>
-            <span class="pub-title">
-              労働災害防止のための動画像を用いた深層学習に基づく異常検知手法
-            </span><br>
-            <span class="pub-authors">橋本慧志, 池勇勳, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
-            <span class="pub-venue">
-              計測自動制御学会 システムインテグレーション部門講演会 (SI2019), 2019.12.
-            </span>
-          </li>
-        </ol>
-      </section>
-
-      <!-- Talks -->
-      <section id="talks">
-        <h2>Talks</h2>
-        <ul class="bullet-list">
-          <li>
-            <b>マルチモーダルAIを用いたドラレコ映像からのヒヤリハット検知</b><br>
-            橋本慧志, 西村仁志<br>
-            東京農工大学 スマートモビリティ研究拠点シンポジウム, 2024.
-          </li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:satoshi.umedalabo@gmail.com">satoshi.umedalabo@gmail.com</a><br>
-          Google Scholar:
-          <a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja">
-          https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ</a><br>
-          GitHub: <a href="https://github.com/satolab12">https://github.com/satolab12</a><br>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/">
-          https://www.linkedin.com/in/satoshi-hashimoto-916345166/</a>
-        </p>
-      </section>
+        <section class="quick-card">
+          <h3 class="sidebar-heading">Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja">Google Scholar</a></li>
+            <li><a href="https://github.com/satolab12">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/">LinkedIn</a></li>
+          </ul>
+        </section>
+      </aside>
     </div>
+  </section>
 
-    <!-- 右カラム：Quick Links のみ（profileカードは Hero に統合済み） -->
-    <aside class="main-right">
-      <section class="links-card">
-        <h2>Quick Links</h2>
-        <ul class="quick-links">
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja">Google Scholar</a></li>
-          <li><a href="https://github.com/satolab12">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/">LinkedIn</a></li>
-        </ul>
-      </section>
-    </aside>
-  </div>
+  <!-- ===== Publications：フォント小さめ ===== -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2>Publications</h2>
+
+      <ol class="pub-list">
+        <!-- 2026/WACV 採択 -->
+        <li>
+          <span class="pub-title">CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles</span><br>
+          <span class="pub-authors">
+            Satoshi Hashimoto, Tatsuya Konishi, Tomoya Kaichi, Kazunori Matsumoto, Mori Kurokawa
+          </span><br>
+          <span class="pub-venue">
+            IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026.03.
+          </span>
+        </li>
+
+        <!-- 2025 -->
+        <li>
+          <span class="pub-title">動画像異常検知の最新動向</span><br>
+          <span class="pub-authors">橋本慧志, 黒川茂莉</span><br>
+          <span class="pub-venue">
+            電子情報通信学会誌, 108(6), pp.544–549, 2025.06.
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">分布外検知と継続学習の統合による段階的モデル成長に向けて</span><br>
+          <span class="pub-authors">
+            鷄内朋也, 小西達也, Derda Kaymak, Bing Liu, 松本一則, 橋本慧志, 西村仁志, 黒川茂莉
+          </span><br>
+          <span class="pub-venue">人工知能学会全国大会（JSAI）, 2025.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">SVD Training を用いた連合継続学習の検討と評価</span><br>
+          <span class="pub-authors">
+            松本一則, 黒川茂莉, 鷄内朋也, 橋本慧志, 西村仁志
+          </span><br>
+          <span class="pub-venue">IBISML 研究会, 2025.</span>
+        </li>
+
+        <!-- 2024 -->
+        <li>
+          <span class="pub-title">マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 西村仁志, 黒川茂莉</span><br>
+          <span class="pub-venue">ビジョン技術の実利用ワークショップ ViEW2024, 2024.11.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">交通ヒヤリハット検知のための拡散モデルを用いた動画データ拡張に関する検討</span><br>
+          <span class="pub-authors">西村仁志, 橋本慧志, 黒川茂莉</span><br>
+          <span class="pub-venue">映像情報メディア学会技術報告 ME研究会, 2024.09.</span>
+        </li>
+
+        <!-- 2022 -->
+        <li>
+          <span class="pub-title">Unsupervised Video Anomaly Detection in Traffic and Crowded Scenes</span><br>
+          <span class="pub-authors">
+            Satoshi Hashimoto, Alessandro Moro, Kenichi Kudo, Takayuki Takahashi, Kazunori Umeda
+          </span><br>
+          <span class="pub-venue">
+            IEEE/SICE International Symposium on System Integration (SII), pp.870–876, 2022.
+          </span>
+        </li>
+
+        <!-- 2021 -->
+        <li>
+          <span class="pub-title">時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">
+            精密工学会誌, 87(12), pp.959–964, 2021.12.
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田昇</span><br>
+          <span class="pub-venue">動的画像処理実利用化ワークショップ DIA2021, 2021.03.</span>
+        </li>
+
+        <!-- 2020 -->
+        <li>
+          <span class="pub-title">時空間敵対的生成ネットワークを用いた教師なし学習による動画像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">ビジョン技術の実利用ワークショップ ViEW2020, 2020.12.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">
+            GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討
+          </span><br>
+          <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">
+            精密工学会画像応用技術専門委員会サマーセミナー2020, 2020.09.
+          </span>
+        </li>
+
+        <!-- 2019 -->
+        <li>
+          <span class="pub-title">
+            労働災害防止のための動画像を用いた深層学習に基づく異常検知手法
+          </span><br>
+          <span class="pub-authors">橋本慧志, 池勇勳, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">
+            計測自動制御学会 システムインテグレーション部門講演会 (SI2019), 2019.12.
+          </span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Talks ===== -->
+  <section id="talks" class="section">
+    <div class="container">
+      <h2>Talks</h2>
+      <ul class="bullet-list">
+        <li>
+          <b>マルチモーダルAIを用いたドラレコ映像からのヒヤリハット検知</b><br>
+          橋本慧志, 西村仁志<br>
+          東京農工大学 スマートモビリティ研究拠点シンポジウム, 2024.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        研究に関するご相談・共同研究依頼などは、以下のメールアドレスへご連絡ください。
+      </p>
+      <p>
+        Email: <a href="mailto:satoshi.umedalabo@gmail.com">satoshi.umedalabo[at]gmail.com</a><br>
+        Google Scholar:
+        <a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja">
+          https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ
+        </a><br>
+        GitHub:
+        <a href="https://github.com/satolab12">https://github.com/satolab12</a><br>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/">
+          https://www.linkedin.com/in/satoshi-hashimoto-916345166/
+        </a>
+      </p>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
