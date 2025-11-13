@@ -31,7 +31,7 @@ body {
     BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Meiryo", sans-serif;
   line-height: 1.7;
   color: var(--fg);
-  background: radial-gradient(circle at top left, #e5edff 0, #f7f7f9 45%, #f7f7f9 100%);
+  background: #f9fafb;     /* グラデーションをやめてフラットな背景に */
 }
 
 .page-main {
