@@ -672,4 +672,50 @@ a:hover {
   }
 }
 
+/* 左側に NEW バッジを置くレイアウト */
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;                    /* バッジと本文の間隔 */
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(148,163,184,0.4);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+/* NEW バッジ */
+.news-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  background: #ef4444;         /* 赤系 */
+  border-radius: 4px;
+  margin-top: 2px;             /* 日付と高さを合わせるために微調整 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-badge {
+    background: #f87171;       /* ダーク用の明るい赤 */
+  }
+}
+
+/* 日付＋本文を縦並び */
+.news-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-date {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.news-body {
+  font-size: 13px;
+}
+
 
