@@ -13,15 +13,46 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  /* 1. カラートークンを「暗背景 × 明るい文字」に切り替え */
   :root {
-    --bg: #050816;
-    --fg: #e5e7eb;
-    --muted: #9ca3af;
-    --accent: #60a5fa;
-    --accent-soft: rgba(96, 165, 250, 0.12);
-    --border: #1f2937;
-    --shadow-soft: 0 18px 42px rgba(15, 23, 42, 0.9);
+    --bg: #020617;              /* ページ全体の背景（ほぼ黒ネイビー） */
+    --fg: #e5e7eb;              /* 本文テキストはしっかり明るく */
+    --muted: #9ca3af;           /* サブテキスト */
+    --accent: #60a5fa;          /* ボタンやリンクの青を少し明るく */
+    --accent-soft: rgba(96, 165, 250, 0.16);
+    --border: #1e293b;
+    --shadow-soft: 0 20px 45px rgba(15, 23, 42, 0.9);
   }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+  }
+
+  /* 2. ヘッダ：今の暗いトーンを維持しつつ境界を少しだけ強く */
+  .site-header {
+    background: linear-gradient(to right, #020617, #020617);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.5);
+  }
+
+  /* 3. News / Awards などのカードを「暗いカード」にする */
+  .section-card .container {
+    background: #0b1120;        /* 背景より少しだけ明るい濃紺 */
+    border-color: var(--border);
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* 4. 細かい文字色の補正（サブテキスト系） */
+  .news-date,
+  .pub-authors,
+  .pub-venue,
+  .timeline-desc,
+  .bullet-list,
+  #contact p {
+    color: var(--muted);
+  }
+}
+
 }
 
 *, *::before, *::after { box-sizing: border-box; }
