@@ -634,3 +634,15 @@ a:hover {
   color: var(--fg);
 }
 
+/* =====================================
+   Light theme のヘッダ文字色の修正
+   ===================================== */
+[data-theme="light"] .site-header,
+[data-theme="light"] .site-header a,
+[data-theme="light"] .brand-main,
+[data-theme="light"] .brand-sub,
+[data-theme="light"] .nav a {
+  color: #1a1a1a !important;   /* 濃いグレーで視認性UP */
+}
+
+
