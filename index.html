@@ -2,20 +2,21 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>あなたの名前 | Research</title>
+  <title>Your Name | Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Researcher in Computer Vision and Machine Learning.">
+  <meta name="description" content="Researcher in Computer Vision / Machine Learning">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="shell header-inner">
+  <div class="container header-inner">
     <div class="brand">
-      <a href="#top" class="brand-name">Your Name</a>
-      <span class="brand-sub">Researcher in Computer Vision &amp; ML</span>
+      <a href="#top" class="brand-main">Your Name</a>
+      <div class="brand-sub">研究者 / Researcher</div>
     </div>
-    <nav class="main-nav">
+    <nav class="nav">
       <a href="#about">About</a>
+      <a href="#interests">Research</a>
       <a href="#news">News</a>
       <a href="#experience">Experience</a>
       <a href="#publications">Publications</a>
@@ -26,154 +27,171 @@
 </header>
 
 <main id="top">
-  <section class="shell hero-section">
-    <div class="hero-card">
-      <div class="hero-main">
-        <img src="avatar.jpg" alt="portrait" class="hero-avatar" onerror="this.style.display='none'">
-        <div>
-          <h1 class="hero-name">あなたの名前（English Name）</h1>
-          <p class="hero-affil">
-            〇〇研究所 / 〇〇大学 ○○研究室（職位など）<br>
-            Research in Computer Vision, Machine Learning, and Video Anomaly Detection.
-          </p>
-          <div class="hero-tags">
-            <span class="tag">Computer Vision</span>
-            <span class="tag">Video Anomaly Detection</span>
-            <span class="tag">Generative Models</span>
-          </div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Your Name ｜ あなたの名前</h1>
+        <p class="hero-affil">
+          Affiliation / 所属を書く（例：〇〇株式会社 研究開発本部, 〇〇大学 〇〇研究室）
+        </p>
+        <p class="hero-role">
+          Researcher in Computer Vision, Machine Learning, and Video Anomaly Detection.
+        </p>
+        <div class="hero-links">
+          <a class="btn primary" href="#publications">Publications</a>
+          <a class="btn" href="#news">News</a>
+          <a class="btn" href="cv.pdf">CV (PDF)</a>
         </div>
+        <p class="hero-meta">
+          Email: <a href="mailto:you@example.com">you@example.com</a> ・
+          <a href="https://scholar.google.com/">Google Scholar</a> ・
+          <a href="https://github.com/yourname">GitHub</a> ・
+          <a href="https://x.com/">X</a>
+        </p>
       </div>
-      <div class="hero-links">
-        <a href="mailto:you@example.com" class="btn primary">Email</a>
-        <a href="https://scholar.google.com/" class="btn">Google Scholar</a>
-        <a href="https://github.com/yourname" class="btn">GitHub</a>
-        <a href="cv.pdf" class="btn">CV (PDF)</a>
+      <div class="hero-photo">
+        <!-- 顔写真を用意できたら avatar.jpg を差し替え -->
+        <img src="avatar.jpg" alt="Portrait" onerror="this.style.display='none'">
       </div>
     </div>
   </section>
 
-  <div class="shell layout">
-    <div class="layout-main">
-      <section id="about" class="block">
+  <div class="container main-columns">
+    <div class="main-left">
+      <!-- About -->
+      <section id="about">
         <h2>About</h2>
         <p>
-          簡単な自己紹介文。動画異常検知、生成モデル、マルチモーダル学習などを中心に研究しています。
-          研究テーマや興味のあるキーワードを2〜3文で書くと、初見の人にも伝わりやすくなります。
+          ここに自己紹介を書きます。研究分野、現在の所属、これまでの経歴の簡単な要約など。
+          例：コンピュータビジョン、動画異常検知、生成モデルなどを専門とする研究者です。
         </p>
       </section>
 
-      <section id="news" class="block">
-        <h2>News</h2>
+      <!-- Research Interests -->
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <ul class="tag-list">
+          <li>Video Anomaly Detection / Weakly-supervised VAD</li>
+          <li>Generative Models for Pseudo Anomalies</li>
+          <li>Multimodal Representation Learning</li>
+          <li>Continual Learning / Domain Adaptation</li>
+        </ul>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <h2>Experience</h2>
         <ul class="timeline">
           <li>
-            <div class="time">2025-11-10</div>
-            <div class="desc">PA-VAD を CVPR 2026 に投稿しました（under review）.</div>
-          </li>
-          <li>
-            <div class="time">2025-10-20</div>
-            <div class="desc">CADE が WACV 2026 に採択されました.</div>
-          </li>
-          <li>
-            <div class="time">2025-09-01</div>
-            <div class="desc">〇〇研究所に着任しました.</div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="experience" class="block">
-        <h2>Experience</h2>
-        <div class="list-card">
-          <h3>Researcher, 〇〇社 / 〇〇研究所 <span class="years">2024 – Present</span></h3>
-          <p class="muted">Computer Vision, Weakly-supervised Video Anomaly Detection, Generative Models.</p>
-        </div>
-        <div class="list-card">
-          <h3>AI Engineer, 〇〇社 <span class="years">2020 – 2024</span></h3>
-          <p class="muted">企業向けAIソリューションの開発、PoC、運用.</p>
-        </div>
-        <!-- 必要に応じて追加 -->
-      </section>
-
-      <section id="publications" class="block">
-        <h2>Publications (Selected)</h2>
-
-        <h3 class="subheading">International Conferences</h3>
-        <ol class="pub-list">
-          <li>
-            <div class="pub-title">Pseudo-Anomalies Are All You Need for Weakly-supervised Video Anomaly Detection</div>
-            <div class="pub-meta"><b>Your Name</b>, Coauthor A, Coauthor B.</div>
-            <div class="pub-venue">Proc. CVPR 2026 (under review).</div>
-            <div class="pub-links">
-              <a href="papers/pavad_cvpr26.pdf">PDF</a>
-              <a href="https://github.com/yourname/PA-VAD">Code</a>
-              <a href="bibtex/pavad_cvpr26.bib">BibTeX</a>
+            <div class="timeline-year">2024 –</div>
+            <div class="timeline-body">
+              <div class="timeline-title">Researcher, Company / Lab Name</div>
+              <div class="timeline-desc">動画異常検知・生成モデルの研究開発。</div>
             </div>
           </li>
           <li>
-            <div class="pub-title">CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles</div>
-            <div class="pub-meta"><b>Your Name</b>, Coauthor A, Coauthor B.</div>
-            <div class="pub-venue">WACV 2026 (accepted).</div>
-            <div class="pub-links">
-              <a href="papers/cade_wacv26.pdf">PDF</a>
-              <a href="#">Project</a>
-              <a href="#">BibTeX</a>
+            <div class="timeline-year">2021 – 2024</div>
+            <div class="timeline-body">
+              <div class="timeline-title">Ph.D. Student / Postdoc, University Name</div>
+              <div class="timeline-desc">博士研究の概要など。</div>
             </div>
           </li>
-        </ol>
-
-        <h3 class="subheading">Workshops &amp; Domestic Conferences</h3>
-        <ol class="pub-list">
-          <li>
-            <div class="pub-title">Title of Workshop Paper</div>
-            <div class="pub-meta"><b>Your Name</b> et al.</div>
-            <div class="pub-venue">ViEW 2025.</div>
-          </li>
-        </ol>
-      </section>
-
-      <section id="awards" class="block">
-        <h2>Awards</h2>
-        <ul class="simple-list">
-          <li>Best Paper Award, 〇〇 Conference 2025</li>
-          <li>〇〇研究奨励賞, 2024</li>
         </ul>
-      </section>
-
-      <section id="contact" class="block">
-        <h2>Contact</h2>
-        <p>
-          研究や共同研究、インターン・採用に関するご相談などは、
-          <a href="mailto:you@example.com">you@example.com</a> までお気軽にご連絡ください。
+        <p class="small-note">
+          詳細な職歴・学歴は CV を参照してください。
         </p>
       </section>
 
-      <footer class="site-footer">
-        <small>&copy; 2025 Your Name. Hosted on GitHub Pages.</small>
-      </footer>
+      <!-- Publications -->
+      <section id="publications">
+        <h2>Selected Publications</h2>
+        <p class="section-note">
+          *代表的な論文のみを掲載しています。フルリストは CV / Google Scholar を参照してください。*
+        </p>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">Paper Title for PA-VAD (例)</span><br>
+            <span class="pub-authors"><b>Your Name</b>, Coauthor A, Coauthor B</span><br>
+            <span class="pub-venue">CVPR 2026 (under review)</span><br>
+            <span class="pub-links">
+              <a href="#">PDF</a> /
+              <a href="#">arXiv</a> /
+              <a href="#">Code</a> /
+              <a href="#">BibTeX</a>
+            </span>
+          </li>
+          <li>
+            <span class="pub-title">CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles</span><br>
+            <span class="pub-authors"><b>Your Name</b>, Coauthor …</span><br>
+            <span class="pub-venue">WACV 2026</span><br>
+            <span class="pub-links">
+              <a href="#">PDF</a> /
+              <a href="#">Code</a>
+            </span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Awards -->
+      <section id="awards">
+        <h2>Awards</h2>
+        <ul class="bullet-list">
+          <li>2025: Best Paper Award, Conference Name</li>
+          <li>2024: Research Grant, Organization Name</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          共同研究やご質問は、Email までお気軽にお問い合わせください。
+        </p>
+        <p>
+          Email: <a href="mailto:you@example.com">you@example.com</a><br>
+          GitHub: <a href="https://github.com/yourname">https://github.com/yourname</a><br>
+          X: <a href="https://x.com/">@your_handle</a>
+        </p>
+      </section>
     </div>
 
-    <aside class="layout-side">
-      <div class="side-card">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#about">About / Research Interests</a></li>
-          <li><a href="#news">Recent News</a></li>
-          <li><a href="#experience">Experience / Education</a></li>
-          <li><a href="#publications">Selected Publications</a></li>
-          <li><a href="#awards">Awards</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <aside class="main-right">
+      <!-- News -->
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">2025-11-10</span>
+            <span class="news-body">PA-VAD を CVPR 2026 に投稿しました。</span>
+          </li>
+          <li>
+            <span class="news-date">2025-10-20</span>
+            <span class="news-body">CADE が WACV 2026 に採択されました。</span>
+          </li>
+          <li>
+            <span class="news-date">2025-09-01</span>
+            <span class="news-body">新しい研究テーマ（動画疑似異常生成）を開始しました。</span>
+          </li>
         </ul>
-      </div>
 
-      <div class="side-card">
-        <h3>Research Interests</h3>
-        <ul>
-          <li>Video Anomaly Detection</li>
-          <li>Generative Models</li>
-          <li>Multimodal Learning</li>
+        <h3 class="sidebar-heading">Quick Links</h3>
+        <ul class="quick-links">
+          <li><a href="#publications">Selected Publications</a></li>
+          <li><a href="cv.pdf">Curriculum Vitae (PDF)</a></li>
+          <li><a href="https://scholar.google.com/">Google Scholar</a></li>
+          <li><a href="https://github.com/yourname">GitHub</a></li>
         </ul>
-      </div>
+      </section>
     </aside>
   </div>
 </main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>&copy; 2025 Your Name</span>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
 </body>
 </html>
