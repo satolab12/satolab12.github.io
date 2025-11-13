@@ -4,93 +4,102 @@
   <meta charset="utf-8">
   <title>あなたの名前 | Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="研究者個人ページ">
+  <meta name="description" content="Researcher in Computer Vision and Machine Learning.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="container">
-  <div class="hero">
-    <img class="avatar" src="avatar.jpg" alt="portrait" onerror="this.style.display='none'">
-    <div>
-      <h1>あなたの名前（English name）</h1>
-      <p class="affil">〇〇研究所 / 〇〇大学 ○○研究室（役職）</p>
-      <p class="contacts">
-        <a href="mailto:you@example.com">you@example.com</a> ・
-        <a href="https://scholar.google.com/">Google Scholar</a> ・
-        <a href="https://github.com/yourname">GitHub</a> ・
-        <a href="cv.pdf">CV</a>
-      </p>
+<header class="site-header">
+  <div class="shell header-inner">
+    <div class="brand">
+      <a href="#top" class="brand-name">Your Name</a>
+      <span class="brand-sub">Researcher in Computer Vision &amp; ML</span>
     </div>
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
-  <nav class="toc">
-    <a href="#about">概要</a>
-    <a href="#news">ニュース</a>
-    <a href="#publications">論文</a>
-    <a href="#talks">発表</a>
-    <a href="#service">学会活動</a>
-  </nav>
 </header>
 
-<main class="container">
-  <section id="about">
-    <h2>概要</h2>
-    <p>
-      研究分野：コンピュータビジョン／機械学習（例：動画異常検知、生成モデル、マルチモーダル）。<br>
-      現在は〇〇テーマに取り組んでいます。キーワード：〇〇、〇〇、〇〇。
-    </p>
+<main id="top">
+  <section class="shell hero-section">
+    <div class="hero-card">
+      <div class="hero-main">
+        <img src="avatar.jpg" alt="portrait" class="hero-avatar" onerror="this.style.display='none'">
+        <div>
+          <h1 class="hero-name">あなたの名前（English Name）</h1>
+          <p class="hero-affil">
+            〇〇研究所 / 〇〇大学 ○○研究室（職位など）<br>
+            Research in Computer Vision, Machine Learning, and Video Anomaly Detection.
+          </p>
+          <div class="hero-tags">
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Video Anomaly Detection</span>
+            <span class="tag">Generative Models</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a href="mailto:you@example.com" class="btn primary">Email</a>
+        <a href="https://scholar.google.com/" class="btn">Google Scholar</a>
+        <a href="https://github.com/yourname" class="btn">GitHub</a>
+        <a href="cv.pdf" class="btn">CV (PDF)</a>
+      </div>
+    </div>
   </section>
 
-  <section id="news">
-    <h2>ニュース</h2>
-    <ul class="news">
-      <li><time datetime="2025-11-10">2025-11-10</time> XXX 2026 に論文投稿（Under review）</li>
-      <li><time datetime="2025-10-20">2025-10-20</time> 国内ワークショップ ViEW 2025 採択</li>
-    </ul>
-  </section>
+  <div class="shell layout">
+    <div class="layout-main">
+      <section id="about" class="block">
+        <h2>About</h2>
+        <p>
+          簡単な自己紹介文。動画異常検知、生成モデル、マルチモーダル学習などを中心に研究しています。
+          研究テーマや興味のあるキーワードを2〜3文で書くと、初見の人にも伝わりやすくなります。
+        </p>
+      </section>
 
-  <section id="publications">
-    <h2>論文（代表）</h2>
-    <ol class="pubs">
-      <li>
-        <span class="title">Paper Title</span><br>
-        <span class="authors"><b>Your Name</b>, Coauthor A, Coauthor B</span><br>
-        <span class="venue">CVPR 2026（under review）</span><br>
-        <span class="links">
-          <a href="paper.pdf">[PDF]</a>
-          <a href="code">[Code]</a>
-          <a href="bibtex.bib">[BibTeX]</a>
-          <a href="poster.pdf">[Poster]</a>
-          <a href="talk-slides.pdf">[Slides]</a>
-        </span>
-      </li>
-      <li>
-        <span class="title">Second Paper Title</span><br>
-        <span class="authors"><b>Your Name</b>, …</span><br>
-        <span class="venue">WACV 2026（submitted）</span><br>
-        <span class="links"><a href="#">[PDF]</a> <a href="#">[Code]</a></span>
-      </li>
-    </ol>
-  </section>
+      <section id="news" class="block">
+        <h2>News</h2>
+        <ul class="timeline">
+          <li>
+            <div class="time">2025-11-10</div>
+            <div class="desc">PA-VAD を CVPR 2026 に投稿しました（under review）.</div>
+          </li>
+          <li>
+            <div class="time">2025-10-20</div>
+            <div class="desc">CADE が WACV 2026 に採択されました.</div>
+          </li>
+          <li>
+            <div class="time">2025-09-01</div>
+            <div class="desc">〇〇研究所に着任しました.</div>
+          </li>
+        </ul>
+      </section>
 
-  <section id="talks">
-    <h2>招待講演・発表</h2>
-    <ul>
-      <li>2025-09-12：〇〇研究会「動画生成と異常検知」</li>
-      <li>2025-07-03：社内セミナー「Pseudo-Anomaly for VAD」</li>
-    </ul>
-  </section>
+      <section id="experience" class="block">
+        <h2>Experience</h2>
+        <div class="list-card">
+          <h3>Researcher, 〇〇社 / 〇〇研究所 <span class="years">2024 – Present</span></h3>
+          <p class="muted">Computer Vision, Weakly-supervised Video Anomaly Detection, Generative Models.</p>
+        </div>
+        <div class="list-card">
+          <h3>AI Engineer, 〇〇社 <span class="years">2020 – 2024</span></h3>
+          <p class="muted">企業向けAIソリューションの開発、PoC、運用.</p>
+        </div>
+        <!-- 必要に応じて追加 -->
+      </section>
 
-  <section id="service">
-    <h2>学会活動・受賞</h2>
-    <ul>
-      <li>Reviewer: CVPR/ICCV/ECCV/NeurIPS</li>
-      <li>受賞：Best Paper Award (ABC 2025)</li>
-    </ul>
-  </section>
+      <section id="publications" class="block">
+        <h2>Publications (Selected)</h2>
 
-  <footer class="foot">
-    <small>&copy; 2025 Your Name. This site is hosted on GitHub Pages.</small>
-  </footer>
-</main>
-</body>
-</html>
+        <h3 class="subheading">International Conferences</h3>
+        <ol class="pub-list">
+          <li>
+            <div class="pub-title">Pseudo-Anomalies Are All You Need for Weakly-supervised Video Anomaly Detection</div>
+            <div class="pub-meta"><b>Your Name</b>, Coauthor A, Coauthor B.</div>
+            <div class="pub-venue">Proc. CVPR 2026 (under review).</div>
+            <div class="
