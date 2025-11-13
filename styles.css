@@ -718,4 +718,8 @@ a:hover {
   font-size: 13px;
 }
 
+#awards .bullet-list li {
+  margin-bottom: 12px;   /* ← 行間を少し広げる（適度にゆとり） */
+  line-height: 1.6;      /* ← 読みやすさ向上 */
+}
 
