@@ -46,26 +46,50 @@
         <div class="hero-links">
           <a class="btn primary" href="#publications">Publications</a>
           <a class="btn" href="#news">News</a>
-          <a class="btn" href="cv.pdf">CV (PDF)</a>
         </div>
 
         <!-- アイコンリンク -->
         <div class="hero-meta-icons">
           <span class="hero-meta-label">Links</span>
-          <a class="icon-link icon-mail" href="mailto:satoshi.umedalabo@gmail.com" title="Email">
-            <span class="sr-only">Email</span>✉
+
+          <!-- Mail -->
+          <a class="icon-link" href="mailto:satoshi.umedalabo@gmail.com" title="Email">
+            <span class="sr-only">Email</span>
+            ✉
           </a>
-          <a class="icon-link icon-scholar" href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja" title="Google Scholar">
-            <span class="sr-only">Google Scholar</span>GS
+
+          <!-- Google Scholar -->
+          <a class="icon-link" href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja" title="Google Scholar">
+            <span class="sr-only">Google Scholar</span>
+            GS
           </a>
-          <a class="icon-link icon-github" href="https://github.com/satolab12" title="GitHub">
-            <span class="sr-only">GitHub</span>GH
+
+          <!-- GitHub アイコン風 -->
+          <a class="icon-link" href="https://github.com/satolab12" title="GitHub">
+            <span class="sr-only">GitHub</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="9" cy="10" r="1.4" fill="var(--bg)"></circle>
+              <circle cx="15" cy="10" r="1.4" fill="var(--bg)"></circle>
+              <path d="M8.5 15.2c1.2 1 2.3 1.3 3.5 1.3s2.3-.3 3.5-1.3" fill="none" stroke="var(--bg)" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn アイコン風 -->
+          <a class="icon-link" href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/" title="LinkedIn">
+            <span class="sr-only">LinkedIn</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="3" ry="3"></rect>
+              <rect x="7" y="10" width="2.2" height="7"></rect>
+              <circle cx="8.1" cy="8" r="1.2" fill="var(--bg)"></circle>
+              <path d="M12 17v-4.3c0-1.2.8-2.2 2.1-2.2 1.4 0 2.1 1.1 2.1 2.4V17" fill="none" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
           </a>
         </div>
       </div>
 
       <div class="hero-photo">
-        <!-- 顔写真を置く場合は avatar.jpg を追加 -->
+        <!-- 顔写真（横長アイコン）。 avatar.jpg をリポジトリに置いてください -->
         <img src="avatar.jpg" alt="Portrait of Satoshi Hashimoto" onerror="this.style.display='none'">
       </div>
     </div>
@@ -75,7 +99,7 @@
   <div class="container main-columns">
     <div class="main-left">
 
-      <!-- About は削除済み -->
+      <!-- About はなし -->
 
       <!-- Research Interests -->
       <section id="interests">
@@ -98,9 +122,9 @@
           <li>
             <div class="timeline-year">2021 – Present</div>
             <div class="timeline-body">
-              <div class="timeline-title">研究員, 株式会社KDDI総合研究所 AI部門</div>
+              <div class="timeline-title">KDDI株式会社 / 株式会社KDDI総合研究所</div>
               <div class="timeline-desc">
-                動画異常検知・行動理解・生成モデル・マルチモーダルAIを用いた安全・安心分野の研究開発。
+                AI・データ利活用に関する研究開発、動画異常検知・行動理解・生成モデル・マルチモーダルAIを用いた安全・安心分野の研究。
               </div>
             </div>
           </li>
@@ -111,23 +135,31 @@
               <div class="timeline-title">中央大学 梅田研究室</div>
               <div class="timeline-desc">
                 時空間敵対的生成ネットワークに基づく動画像異常検知手法の研究。
-                U-Net Discriminator の中間層特徴融合による異常度推定法を提案。
+                U-Net Discriminator の中間層特徴融合による異常度推定法などを提案。
               </div>
             </div>
           </li>
         </ul>
 
         <p class="small-note">
-          詳細な職歴・学歴は CV を参照してください。
+          詳細な職歴・学歴は今後公開予定の CV ページに掲載予定です。
         </p>
       </section>
 
-      <!-- Publications: 全部 -->
+      <!-- Publications: 年・月順（降順） -->
       <section id="publications">
         <h2>Publications</h2>
 
         <ol class="pub-list">
           <!-- 2025 -->
+          <li>
+            <span class="pub-title">動画像異常検知の最新動向</span><br>
+            <span class="pub-authors">橋本慧志, 黒川茂莉</span><br>
+            <span class="pub-venue">
+              電子情報通信学会誌, 108(6), pp.544–549, 2025.06.
+            </span>
+          </li>
+
           <li>
             <span class="pub-title">分布外検知と継続学習の統合による段階的モデル成長に向けて</span><br>
             <span class="pub-authors">
@@ -141,20 +173,20 @@
             <span class="pub-authors">
               松本一則, 黒川茂莉, 鷄内朋也, 橋本慧志, 西村仁志
             </span><br>
-            <span class="pub-venue">予測・推論・学習の理論と応用（IBISML）研究会, 2025.</span>
-          </li>
-
-          <li>
-            <span class="pub-title">動画像異常検知の最新動向</span><br>
-            <span class="pub-authors">橋本慧志, 黒川茂莉</span><br>
-            <span class="pub-venue">電子情報通信学会誌, 108(6), 2025.</span>
+            <span class="pub-venue">IBISML 研究会, 2025.</span>
           </li>
 
           <!-- 2024 -->
           <li>
             <span class="pub-title">マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知</span><br>
             <span class="pub-authors">橋本慧志, 西村仁志, 黒川茂莉</span><br>
-            <span class="pub-venue">ViEW, 2024.</span>
+            <span class="pub-venue">ViEW, 2024.11.</span>
+          </li>
+
+          <li>
+            <span class="pub-title">交通ヒヤリハット検知のための拡散モデルを用いた動画データ拡張に関する検討</span><br>
+            <span class="pub-authors">西村仁志, 橋本慧志, 黒川茂莉</span><br>
+            <span class="pub-venue">映像情報メディア学会技術報告 ME研究会, 2024.09.</span>
           </li>
 
           <!-- 2022 -->
@@ -163,33 +195,33 @@
             <span class="pub-authors">
               Satoshi Hashimoto, Alessandro Moro, Kenichi Kudo, Takayuki Takahashi, Kazunori Umeda
             </span><br>
-            <span class="pub-venue">SII 2022, pp. 870–876.</span>
+            <span class="pub-venue">
+              IEEE/SICE International Symposium on System Integration (SII), pp.870–876, 2022.
+            </span>
           </li>
 
           <!-- 2021 -->
           <li>
             <span class="pub-title">時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知</span><br>
             <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
-            <span class="pub-venue">精密工学会誌, 87(12), 2021.</span>
-          </li>
-
-          <li>
-            <span class="pub-title">時空間敵対的生成ネットワークを用いた教師なし学習による動画像異常検知</span><br>
-            <span class="pub-authors">橋本慧志</span><br>
             <span class="pub-venue">
-              中央大学大学院 理工学研究科 精密工学専攻 学位論文, 2020年度.
+              精密工学会誌, 87(12), pp.959–964, 2021.12.
             </span>
           </li>
 
           <li>
-            <span class="pub-title">敵対的生成ネットワークを用いた動画像異常検知における背景除去の有用性の検討</span><br>
-            <span class="pub-authors">塚越健太郎, 橋本慧志, 梅田和昇</span><br>
-            <span class="pub-venue">
-              ロボティクス・メカトロニクス講演会（Robomech）, 2021.
-            </span>
+            <span class="pub-title">時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知</span><br>
+            <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+            <span class="pub-venue">動的画像処理実利用化ワークショップ DIA2021, 2021.03.</span>
           </li>
 
           <!-- 2020 -->
+          <li>
+            <span class="pub-title">時空間敵対的生成ネットワークを用いた教師なし学習による動画像異常検知</span><br>
+            <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+            <span class="pub-venue">ビジョン技術の実利用ワークショップ ViEW2020, 2020.12.</span>
+          </li>
+
           <li>
             <span class="pub-title">
               Anomaly Detection Based on Deep Learning Using Video for Prevention of Industrial Accidents
@@ -206,43 +238,19 @@
             </span><br>
             <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
             <span class="pub-venue">
-              精密工学会 画像応用技術専門委員会 サマーセミナー2020 / 映像情報メディア学会技術報告, 2020.
+              精密工学会画像応用技術専門委員会サマーセミナー2020, 2020.09.
             </span>
           </li>
 
-          <!-- Under review / etc. -->
-          <li>
-            <span class="pub-title">Pseudo-Anomaly Video Anomaly Detection (PA-VAD)</span><br>
-            <span class="pub-authors">橋本慧志（ほか共著者）</span><br>
-            <span class="pub-venue">CVPR 2026 投稿中.</span>
-          </li>
-
-          <li>
-            <span class="pub-title">CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles</span><br>
-            <span class="pub-authors">橋本慧志（ほか共著者）</span><br>
-            <span class="pub-venue">WACV 2026.</span>
-          </li>
-
-          <!-- Early works -->
+          <!-- 2019 -->
           <li>
             <span class="pub-title">
-              Model Predictive Control of Shallow Drowsiness: Improving Productivity of Office Workers
+              労働災害防止のための動画像を用いた深層学習に基づく異常検知手法
             </span><br>
-            <span class="pub-authors">
-              Takuma Kogo, Masanori Tsujikawa, Yukihiro Kiuchi, Atsushi Nishino, Satoshi Hashimoto
-            </span><br>
-            <span class="pub-venue">EMBC 2019.</span>
-          </li>
-
-          <li>
-            <span class="pub-title">
-              Drowsiness Estimation from Low-Frame-Rate Facial Videos using Eyelid Variability Features
-            </span><br>
-            <span class="pub-authors">
-              Masanori Tsujikawa, Yoshifumi Onishi, Yukihiro Kiuchi,
-              Toshinobu Ogatsu, Atsushi Nishino, Satoshi Hashimoto
-            </span><br>
-            <span class="pub-venue">EMBC 2018.</span>
+            <span class="pub-authors">橋本慧志, 池勇勳, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+            <span class="pub-venue">
+              計測自動制御学会 システムインテグレーション部門講演会 (SI2019), 2019.12.
+            </span>
           </li>
         </ol>
       </section>
@@ -286,13 +294,53 @@
           Google Scholar:
           <a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja">
           https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ</a><br>
-          GitHub: <a href="https://github.com/satolab12">https://github.com/satolab12</a>
+          GitHub: <a href="https://github.com/satolab12">https://github.com/satolab12</a><br>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/">
+          https://www.linkedin.com/in/satoshi-hashimoto-916345166/</a>
         </p>
       </section>
     </div>
 
-    <!-- 右側 News -->
+    <!-- 右側：プロフィール画像＋News -->
     <aside class="main-right">
+
+      <!-- プロフィールカード（右余白に画像） -->
+      <section class="profile-card">
+        <div class="profile-photo">
+          <img src="avatar.jpg" alt="Portrait of Satoshi Hashimoto" onerror="this.style.display='none'">
+        </div>
+        <div class="profile-name">Satoshi Hashimoto</div>
+        <div class="profile-role">Researcher, KDDI / KDDI Research</div>
+        <div class="profile-icons">
+          <a class="icon-link" href="mailto:satoshi.umedalabo@gmail.com" title="Email">
+            <span class="sr-only">Email</span>✉
+          </a>
+          <a class="icon-link" href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja" title="Google Scholar">
+            <span class="sr-only">Google Scholar</span>GS
+          </a>
+          <a class="icon-link" href="https://github.com/satolab12" title="GitHub">
+            <span class="sr-only">GitHub</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="9" cy="10" r="1.4" fill="var(--bg)"></circle>
+              <circle cx="15" cy="10" r="1.4" fill="var(--bg)"></circle>
+              <path d="M8.5 15.2c1.2 1 2.3 1.3 3.5 1.3s2.3-.3 3.5-1.3" fill="none" stroke="var(--bg)" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a class="icon-link" href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/" title="LinkedIn">
+            <span class="sr-only">LinkedIn</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="3" ry="3"></rect>
+              <rect x="7" y="10" width="2.2" height="7"></rect>
+              <circle cx="8.1" cy="8" r="1.2" fill="var(--bg)"></circle>
+              <path d="M12 17v-4.3c0-1.2.8-2.2 2.1-2.2 1.4 0 2.1 1.1 2.1 2.4V17" fill="none" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- News -->
       <section id="news">
         <h2>News</h2>
         <ul class="news-list">
@@ -313,9 +361,9 @@
         <h3 class="sidebar-heading">Quick Links</h3>
         <ul class="quick-links">
           <li><a href="#publications">Publications</a></li>
-          <li><a href="cv.pdf">Curriculum Vitae (PDF)</a></li>
           <li><a href="https://scholar.google.co.jp/citations?user=4O0zC50AAAAJ&amp;hl=ja">Google Scholar</a></li>
           <li><a href="https://github.com/satolab12">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/satoshi-hashimoto-916345166/">LinkedIn</a></li>
         </ul>
       </section>
     </aside>
