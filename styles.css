@@ -644,5 +644,13 @@ a:hover {
 [data-theme="light"] .nav a {
   color: #1a1a1a !important;   /* 濃いグレーで視認性UP */
 }
+/* =====================================
+   Light theme: hero 部の紹介文を濃くする
+   ===================================== */
+[data-theme="light"] .hero-affil,
+[data-theme="light"] .hero-role {
+  color: #222 !important;     /* しっかり濃いグレー */
+  font-weight: 500;           /* 少しだけ太くして視認性UP */
+}
 
 
