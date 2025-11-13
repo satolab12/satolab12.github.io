@@ -608,12 +608,13 @@ a:hover {
 }
 
 /* -------------------- Dark mode (全体まとめてここで上書き) -------------------- */
+/* -------------------- Dark mode (全体まとめてここで上書き) -------------------- */
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #020617;        /* ページ背景：ほぼ黒ネイビー */
-    --fg: #f9fafb;        /* 本文テキスト：ほぼ白 */
-    --muted: #f9fafb;     /* サブテキストも“しっかり白”に寄せる */
-    --accent: #60a5fa;    /* 少し明るい青 */
+    --fg: #e5e7eb;        /* 少し落ち着いた白 */
+    --muted: #cbd5f5;     /* サブテキストもやや柔らかめの白 */
+    --accent: #60a5fa;    /* 明るめの青 */
     --accent-soft: rgba(96, 165, 250, 0.16);
     --border: #1e293b;
     --shadow-soft: 0 20px 45px rgba(15, 23, 42, 0.9);
@@ -668,6 +669,13 @@ a:hover {
     background: #0b1120;
   }
 
+  /* ★ ヒーローのバッジを落ち着いた色に（まっ白をやめる） */
+  .hero-badges span {
+    background: rgba(15, 23, 42, 0.9);
+    border-color: rgba(148, 163, 184, 0.6);
+    color: #e5e7eb;
+  }
+
   .section-card .container,
   .profile-card,
   .quick-card {
@@ -686,7 +694,7 @@ a:hover {
     color: var(--fg);
   }
 
-  /* News / Awards を特に読みやすく（文字は完全に白） */
+  /* News / Awards を特に読みやすく（文字は白） */
   #news,
   #awards,
   #news .section-card,
@@ -705,3 +713,4 @@ a:hover {
     color: #ffffff;
   }
 }
+
