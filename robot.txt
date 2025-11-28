@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://satolab12.github.io/sitemap.xml
