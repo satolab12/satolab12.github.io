@@ -6,7 +6,11 @@
   </url>
   <url>
     <loc>https://satolab12.github.io/#news</loc>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://satolab12.github.io/#experience</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://satolab12.github.io/#publications</loc>
@@ -14,6 +18,10 @@
   </url>
   <url>
     <loc>https://satolab12.github.io/#awards</loc>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://satolab12.github.io/#contact</loc>
+    <priority>0.6</priority>
   </url>
 </urlset>
