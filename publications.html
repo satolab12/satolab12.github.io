@@ -4,35 +4,204 @@
   <meta charset="utf-8">
   <title>Satoshi Hashimoto | Publications</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Satoshi Hashimoto の業績一覧（Publications）">
+
+  <meta name="description" content="Satoshi Hashimoto（橋本 慧志）の業績一覧（Publications）です。">
   <link rel="canonical" href="https://satolab12.github.io/publications.html">
+
+  <meta property="og:title" content="Satoshi Hashimoto | Publications">
+  <meta property="og:description" content="Satoshi Hashimoto（橋本 慧志）の業績一覧（Publications）です。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://satolab12.github.io/publications.html">
+  <meta property="og:image" content="https://satolab12.github.io/img/favicon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="shortcut icon" href="img/favicon.png">
 </head>
 
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand"></div>
+    <div class="brand">
+      <!-- 任意：ロゴや名前を置くならここ -->
+      <!-- <a href="index.html" class="brand-main">Satoshi Hashimoto</a> -->
+    </div>
+
     <nav class="nav">
-      <a href="index.html">Home</a>
+      <a href="index.html#interests">Research</a>
       <a href="news.html">News</a>
-      <a href="publications.html">Publications</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="publications.html" aria-current="page">Publications</a>
+      <a href="index.html#awards">Awards</a>
+      <a href="index.html#talks">Talks</a>
     </nav>
+
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
   </div>
 </header>
 
-<main class="page-main">
+<main class="page-main" id="top">
   <section class="section-card">
     <div class="container">
       <h1>Publications</h1>
 
       <ol class="pub-list">
-        <!-- index.html の Publications 全件をここへ移植 -->
+        <li>
+          <span class="pub-title">連合学習を用いた車載映像からの交通リスク検知-都市実証による評価-</span><br>
+          <span class="pub-authors">橋本慧志, 西村仁志, 服部元，山口修平，黒川茂莉</span><br>
+          <span class="pub-venue">動的画像処理実利用化ワークショップ DIA2026, 2026.03.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles</span><br>
+          <span class="pub-authors">
+            Satoshi Hashimoto, Tatsuya Konishi, Tomoya Kaichi, Kazunori Matsumoto, Mori Kurokawa
+          </span><br>
+          <span class="pub-venue">
+            IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026.03.
+          </span>
+          <span class="pub-venue">
+            <a href="https://arxiv.org/abs/2512.06840" target="_blank" rel="noopener noreferrer">[Paper]</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">Pseudo Anomalies Are All You Need: Diffusion-Based Generation for Weakly-Supervised Video Anomaly Detection</span><br>
+          <span class="pub-authors">
+            Satoshi HASHIMOTO, Hitoshi Nishimura, Yanan Wang and Mori Kurokawa
+          </span><br>
+          <span class="pub-venue">
+            arXiv, 2025.12.
+          </span>
+          <span class="pub-venue">
+            <a href="https://arxiv.org/abs/2512.06845" target="_blank" rel="noopener noreferrer">[Paper]</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">動画拡散モデルを用いた疑似異常生成と適応的メモリによる監視映像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 西村仁志, 黒川茂莉</span><br>
+          <span class="pub-venue">ビジョン技術の実利用ワークショップViEW2025, 2025.12.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 西村仁志, 黒川茂莉</span><br>
+          <span class="pub-venue">精密工学会誌, 91(12), pp.1136-1143, 2025.12.</span>
+          <span class="pub-venue">
+            <a href="https://www.jstage.jst.go.jp/article/jjspe/91/12/91_1136/_article/-char/ja" target="_blank" rel="noopener noreferrer">[Paper]</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">動画像異常検知の最新動向</span><br>
+          <span class="pub-authors">橋本慧志, 黒川茂莉</span><br>
+          <span class="pub-venue">電子情報通信学会誌, 108(6), pp.544–549, 2025.06.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">分布外検知と継続学習の統合による段階的モデル成長に向けて</span><br>
+          <span class="pub-authors">
+            鷄内朋也, 小西達也, Derda Kaymak, Bing Liu, 松本一則, 橋本慧志, 西村仁志, 黒川茂莉
+          </span><br>
+          <span class="pub-venue">人工知能学会全国大会（JSAI）, 2025.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">SVD Training を用いた連合継続学習の検討と評価</span><br>
+          <span class="pub-authors">
+            松本一則, 黒川茂莉, 鷄内朋也, 橋本慧志, 西村仁志
+          </span><br>
+          <span class="pub-venue">IBISML 研究会, 2025.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 西村仁志, 黒川茂莉</span><br>
+          <span class="pub-venue">ビジョン技術の実利用ワークショップViEW2024, 2024.12.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">交通ヒヤリハット検知のための拡散モデルを用いた動画データ拡張に関する検討</span><br>
+          <span class="pub-authors">西村仁志, 橋本慧志, 黒川茂莉</span><br>
+          <span class="pub-venue">映像情報メディア学会技術報告 ME研究会, 2024.09.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">Unsupervised Video Anomaly Detection in Traffic and Crowded Scenes</span><br>
+          <span class="pub-authors">
+            Satoshi Hashimoto, Alessandro Moro, Kenichi Kudo, Takayuki Takahashi, Kazunori Umeda
+          </span><br>
+          <span class="pub-venue">
+            IEEE/SICE International Symposium on System Integration (SII), pp.870–876, 2022.
+          </span>
+          <span class="pub-venue">
+            <a href="https://ieeexplore.ieee.org/document/9708745" target="_blank" rel="noopener noreferrer">[Paper]</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">
+            精密工学会誌, 87(12), pp.959–964, 2021.12.
+          </span>
+          <span class="pub-venue">
+            <a href="https://www.jstage.jst.go.jp/article/jjspe/87/12/87_959/_article/-char/ja/" target="_blank" rel="noopener noreferrer">[Paper]</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">動的画像処理実利用化ワークショップ DIA2021, 2021.03.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">時空間敵対的生成ネットワークを用いた教師なし学習による動画像異常検知</span><br>
+          <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">ビジョン技術の実利用ワークショップ ViEW2020, 2020.12.</span>
+        </li>
+
+        <li>
+          <span class="pub-title">GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討</span><br>
+          <span class="pub-authors">橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">
+            精密工学会画像応用技術専門委員会サマーセミナー2020, 2020.09.
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">Anomaly Detection Based on Deep Learning Using Video for Prevention of Industrial Accidents</span><br>
+          <span class="pub-authors">
+            Satoshi Hashimoto, Yonghoon Ji, Kenichi Kudo, Takayuki Takahashi, and Kazunori Umeda
+          </span><br>
+          <span class="pub-venue">arXiv, 2020.</span>
+          <span class="pub-venue">
+            <a href="https://arxiv.org/abs/2005.13734" target="_blank" rel="noopener noreferrer">[Paper]</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">労働災害防止のための動画像を用いた深層学習に基づく異常検知手法</span><br>
+          <span class="pub-authors">橋本慧志, 池勇勳, 工藤謙一, 高橋孝幸, 梅田和昇</span><br>
+          <span class="pub-venue">
+            計測自動制御学会 システムインテグレーション部門講演会 (SI2019), 2019.12.
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">移動ロボットによる3次元人物追跡のための2台のカメラを用いたパーティクルフィルタによる人物検出</span><br>
+          <span class="pub-authors">橋本 慧志, 本多 明彦, 池 勇勳, 梅田 和昇</span><br>
+          <span class="pub-venue">
+            計測自動制御学会 システムインテグレーション部門講演会 (SI2018), 2018.12.
+          </span>
+        </li>
       </ol>
 
       <div class="section-more">
@@ -45,16 +214,19 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <span>&copy; 2025 Satoshi Hashimoto</span>
-    <a href="index.html" class="back-to-top">Home</a>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
   </div>
 </footer>
 
 <script>
 (function () {
   const STORAGE_KEY = "sh-theme";
-  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const prefersDark = window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
   const stored = localStorage.getItem(STORAGE_KEY);
   const initialTheme = stored || (prefersDark ? "dark" : "light");
+
   document.documentElement.setAttribute("data-theme", initialTheme);
 
   const btn = document.getElementById("themeToggle");
