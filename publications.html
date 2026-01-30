@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Satoshi Hashimoto | Publications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Satoshi Hashimoto の業績一覧（Publications）">
+  <link rel="canonical" href="https://satolab12.github.io/publications.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand"></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </div>
+</header>
+
+<main class="page-main">
+  <section class="section-card">
+    <div class="container">
+      <h1>Publications</h1>
+
+      <ol class="pub-list">
+        <!-- index.html の Publications 全件をここへ移植 -->
+      </ol>
+
+      <div class="section-more">
+        <a class="btn" href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>&copy; 2025 Satoshi Hashimoto</span>
+    <a href="index.html" class="back-to-top">Home</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const STORAGE_KEY = "sh-theme";
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const stored = localStorage.getItem(STORAGE_KEY);
+  const initialTheme = stored || (prefersDark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", initialTheme);
+
+  const btn = document.getElementById("themeToggle");
+  const updateIcon = (theme) => {
+    if (!btn) return;
+    btn.textContent = theme === "dark" ? "☀️" : "🌙";
+  };
+  updateIcon(initialTheme);
+
+  if (btn) {
+    btn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem(STORAGE_KEY, next);
+      updateIcon(next);
+    });
+  }
+})();
+</script>
+</body>
+</html>
