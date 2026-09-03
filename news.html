@@ -5,31 +5,34 @@
   <title>Satoshi Hashimoto | News</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Satoshi Hashimoto（橋本 慧志）のNews一覧です。">
+  <meta name="description" content="Satoshi Hashimoto（橋本 慧志）の最新情報（News）です。">
   <link rel="canonical" href="https://satolab12.github.io/news.html">
 
   <meta property="og:title" content="Satoshi Hashimoto | News">
-  <meta property="og:description" content="Satoshi Hashimoto（橋本 慧志）のNews一覧です。">
+  <meta property="og:description" content="Satoshi Hashimoto（橋本 慧志）の最新情報（News）です。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://satolab12.github.io/news.html">
   <meta property="og:image" content="https://satolab12.github.io/img/favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="shortcut icon" href="img/favicon.png">
+
+  <script>
+    document.documentElement.dataset.theme =
+      localStorage.getItem("sh-theme") ||
+      (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  </script>
 </head>
 
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand">
-      <!-- 任意：ロゴや名前を置くならここ -->
-      <!-- <a href="index.html" class="brand-main">Satoshi Hashimoto</a> -->
-    </div>
+    <a class="brand" href="index.html">Satoshi Hashimoto</a>
 
     <nav class="nav">
       <a href="index.html#interests">Research</a>
@@ -39,137 +42,28 @@
       <a href="publications.html">Publications</a>
       <a href="index.html#awards">Awards</a>
       <a href="index.html#talks">Talks</a>
+      <button id="themeToggle" class="theme-toggle" type="button">Dark</button>
     </nav>
-
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
   </div>
 </header>
 
-<main class="page-main" id="top">
-  <section class="section-card">
+<main id="top" class="page-main">
+  <section class="section">
     <div class="container">
       <h1>News</h1>
-
-      <ul class="news-list">
-
-        <li class="news-item">
-          <span class="news-badge">NEW</span>
-          <div class="news-main">
-            <span class="news-date">2026-08</span>
-            <span class="news-body">株式会社KDDI総合研究所 2026年度優秀基本研究賞を「フィジカルAIの環境理解を支える映像異常検知手法における最先端技術の研究開発」の題目で受賞しました</span>
-          </div>
-        </li>
-
-        <!-- <li class="news-item">
-          <span class="news-badge">NEW</span>
-          <div class="news-main">
-            <span class="news-date">2026-03</span>
-            <span class="news-body">主著論文 "Pseudo Anomalies Are All You Need: Diffusion-Based Generation for Weakly-Supervised Video Anomaly Detection" が CVPR 2026 Findings に採択されました</span>
-          </div>
-        </li> -->
-
-        <li class="news-item">
-          <span class="news-badge">NEW</span>
-          <div class="news-main">
-            <span class="news-date">2026-06</span>
-            <span class="news-body">主著論文 "PA-VAD: Diffusion-Based Pseudo-Only Video Anomaly Detection via Domain-Aligned Memory Updates" がECCV 2026に採択されました</span>
-          </div>
-        </li>
-
-        <li class="news-item">
-          <span class="news-badge">NEW</span>
-          <div class="news-main">
-            <span class="news-date">2026-03</span>
-            <span class="news-body">主著論文が2025年度精密工学会論文賞を受賞しました<a href="https://www.jspe.or.jp/activities/awards/jspe-paper-award/#best-paper" target="_blank">[Link]</a></span>
-          </div>
-        </li>
-
-        <li class="news-item">
-          <!-- <span class="news-badge">NEW</span> -->
-          <div class="news-main">
-            <span class="news-date">2025-12</span>
-            <span class="news-body">
-              ViEW2025にて，主著論文が最優秀論文賞（小田原賞）を受賞しました
-              <a href="https://www.tc-iaip.org/view/2025/#award" target="_blank" rel="noopener noreferrer">[Link]</a>
-            </span>
-          </div>
-        </li>
-
-        <li class="news-item">
-          <!-- <span class="news-badge">NEW</span> -->
-          <div class="news-main">
-            <span class="news-date">2025-11</span>
-            <span class="news-body">
-              主著論文 "CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles" が WACV 2026 に採択されました
-            </span>
-          </div>
-        </li>
-
-        <li class="news-item">
-          <div class="news-main">
-            <span class="news-date">2025-11</span>
-            <span class="news-body">
-              ViEW2025にて，主著の「動画拡散モデルを用いた疑似異常生成と適応的メモリによる監視映像異常検知」を2日目 OS3-O1 (IS3-1) に発表します
-              <a href="https://www.tc-iaip.org/view/2025/index.html" target="_blank" rel="noopener noreferrer">[Link]</a>
-            </span>
-          </div>
-        </li>
-
-        <li class="news-item">
-          <div class="news-main">
-            <span class="news-date">2025-09</span>
-            <span class="news-body">
-              主著論文 "マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知" が 精密工学会誌 に採択されました
-            </span>
-          </div>
-        </li>
-
-        <li> <span class="news-date">2025-06</span> <span class="news-body"> 主著の解説記事「動画像異常検知の最新動向」が電子情報通信学会誌に掲載されました </span> </li>
-
-      </ul>
-
-      <div class="section-more">
-        <a class="btn" href="index.html">Back to Home</a>
-      </div>
+      <div data-type="news" data-source="data/news.json"></div>
+      <p class="section-more"><a href="index.html">← Back to Home</a></p>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span>&copy; 2025 Satoshi Hashimoto</span>
-    <a href="#top" class="back-to-top">Back to top ↑</a>
+    <span>&copy; 2026 Satoshi Hashimoto</span>
+    <a href="#top">Back to top ↑</a>
   </div>
 </footer>
 
-<script>
-(function () {
-  const STORAGE_KEY = "sh-theme";
-
-  const prefersDark = window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const stored = localStorage.getItem(STORAGE_KEY);
-  const initialTheme = stored || (prefersDark ? "dark" : "light");
-
-  document.documentElement.setAttribute("data-theme", initialTheme);
-
-  const btn = document.getElementById("themeToggle");
-  const updateIcon = (theme) => {
-    if (!btn) return;
-    btn.textContent = theme === "dark" ? "☀️" : "🌙";
-  };
-  updateIcon(initialTheme);
-
-  if (btn) {
-    btn.addEventListener("click", () => {
-      const current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
-      const next = current === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", next);
-      localStorage.setItem(STORAGE_KEY, next);
-      updateIcon(next);
-    });
-  }
-})();
-</script>
+<script src="assets/js/render.js" defer></script>
 </body>
 </html>

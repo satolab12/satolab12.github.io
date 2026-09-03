@@ -1,0 +1,121 @@
+[
+  {
+    "title": "PA-VAD: Diffusion-Based Pseudo-Only Video Anomaly Detection via Domain-Aligned Memory Updates",
+    "authors": "Satoshi Hashimoto, Hitoshi Nishimura, Yanan Wang and Mori Kurokawa",
+    "venue": "European Conference on Computer Vision (ECCV), 2026.09.",
+    "url": "https://arxiv.org/abs/2512.06845"
+  },
+  {
+    "title": "Pseudo Anomalies Are All You Need: Diffusion-Based Generation for Weakly-Supervised Video Anomaly Detection",
+    "authors": "Satoshi Hashimoto, Hitoshi Nishimura, Yanan Wang and Mori Kurokawa",
+    "venue": "Findings of CVPR 2026 (opt-in declined; not published), 2026.03.",
+    "url": "https://arxiv.org/abs/2512.06845",
+    "hidden": true
+  },
+  {
+    "title": "大規模視覚言語モデルを用いた交通ヒヤリハット検知の検討",
+    "authors": "橋本慧志, 西村仁志, 黒川茂莉",
+    "venue": "情報科学技術フォーラム FIT2026, 2026.09."
+  },
+  {
+    "title": "MuST-VAD: Mutual Structured Learning for Video Anomaly Detection",
+    "authors": "Satoshi Hashimoto, Hitoshi Nishimura, Mori Kurokawa",
+    "venue": "arXiv, 2026.08.",
+    "url": "https://arxiv.org/abs/2608.06913"
+  },
+  {
+    "title": "大規模視覚言語モデルを用いた異常検知における多層視覚表現の分析",
+    "authors": "橋本慧志, 西村仁志, 黒川茂莉",
+    "venue": "画像の認識・理解シンポジウム MIRU2026, 2026.08."
+  },
+  {
+    "title": "連合学習を用いた車載映像からの交通リスク検知-都市実証による評価-",
+    "authors": "橋本慧志, 西村仁志, 服部元, 山口修平, 黒川茂莉",
+    "venue": "動的画像処理実利用化ワークショップ DIA2026, 2026.03."
+  },
+  {
+    "title": "CADE: Continual Weakly-supervised Video Anomaly Detection with Ensembles",
+    "authors": "Satoshi Hashimoto, Tatsuya Konishi, Tomoya Kaichi, Kazunori Matsumoto, Mori Kurokawa",
+    "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026.03.",
+    "url": "https://arxiv.org/abs/2512.06840"
+  },
+  {
+    "title": "動画拡散モデルを用いた疑似異常生成と適応的メモリによる監視映像異常検知",
+    "authors": "橋本慧志, 西村仁志, 黒川茂莉",
+    "venue": "ビジョン技術の実利用ワークショップ ViEW2025, 2025.12."
+  },
+  {
+    "title": "マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知",
+    "authors": "橋本慧志, 西村仁志, 黒川茂莉",
+    "venue": "精密工学会誌, 91(12), pp.1136-1143, 2025.12.",
+    "url": "https://www.jstage.jst.go.jp/article/jjspe/91/12/91_1136/_article/-char/ja"
+  },
+  {
+    "title": "動画像異常検知の最新動向",
+    "authors": "橋本慧志, 黒川茂莉",
+    "venue": "電子情報通信学会誌, 108(6), pp.544–549, 2025.06."
+  },
+  {
+    "title": "分布外検知と継続学習の統合による段階的モデル成長に向けて",
+    "authors": "鷄内朋也, 小西達也, Derda Kaymak, Bing Liu, 松本一則, 橋本慧志, 西村仁志, 黒川茂莉",
+    "venue": "人工知能学会全国大会（JSAI）, 2025."
+  },
+  {
+    "title": "SVD Training を用いた連合継続学習の検討と評価",
+    "authors": "松本一則, 黒川茂莉, 鷄内朋也, 橋本慧志, 西村仁志",
+    "venue": "IBISML 研究会, 2025."
+  },
+  {
+    "title": "マルチモーダル大規模言語モデルを用いたキャプション自動生成による監視映像異常検知",
+    "authors": "橋本慧志, 西村仁志, 黒川茂莉",
+    "venue": "ビジョン技術の実利用ワークショップ ViEW2024, 2024.12."
+  },
+  {
+    "title": "交通ヒヤリハット検知のための拡散モデルを用いた動画データ拡張に関する検討",
+    "authors": "西村仁志, 橋本慧志, 黒川茂莉",
+    "venue": "映像情報メディア学会技術報告 ME研究会, 2024.09."
+  },
+  {
+    "title": "Unsupervised Video Anomaly Detection in Traffic and Crowded Scenes",
+    "authors": "Satoshi Hashimoto, Alessandro Moro, Kenichi Kudo, Takayuki Takahashi, Kazunori Umeda",
+    "venue": "IEEE/SICE International Symposium on System Integration (SII), pp.870–876, 2022.",
+    "url": "https://ieeexplore.ieee.org/document/9708745"
+  },
+  {
+    "title": "時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知",
+    "authors": "橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇",
+    "venue": "精密工学会誌, 87(12), pp.959–964, 2021.12.",
+    "url": "https://www.jstage.jst.go.jp/article/jjspe/87/12/87_959/_article/-char/ja/"
+  },
+  {
+    "title": "時空間敵対的生成ネットワークにおけるU-Net Discriminatorの中間層特徴の融合による動画像異常検知",
+    "authors": "橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇",
+    "venue": "動的画像処理実利用化ワークショップ DIA2021, 2021.03."
+  },
+  {
+    "title": "時空間敵対的生成ネットワークを用いた教師なし学習による動画像異常検知",
+    "authors": "橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇",
+    "venue": "ビジョン技術の実利用ワークショップ ViEW2020, 2020.12."
+  },
+  {
+    "title": "GANを活用した動画像異常検知手法の構築と労働災害防止へ向けた応用の検討",
+    "authors": "橋本慧志, 工藤謙一, 高橋孝幸, 梅田和昇",
+    "venue": "精密工学会画像応用技術専門委員会サマーセミナー2020, 2020.09."
+  },
+  {
+    "title": "Anomaly Detection Based on Deep Learning Using Video for Prevention of Industrial Accidents",
+    "authors": "Satoshi Hashimoto, Yonghoon Ji, Kenichi Kudo, Takayuki Takahashi, and Kazunori Umeda",
+    "venue": "arXiv, 2020.",
+    "url": "https://arxiv.org/abs/2005.13734"
+  },
+  {
+    "title": "労働災害防止のための動画像を用いた深層学習に基づく異常検知手法",
+    "authors": "橋本慧志, 池勇勳, 工藤謙一, 高橋孝幸, 梅田和昇",
+    "venue": "計測自動制御学会 システムインテグレーション部門講演会 (SI2019), 2019.12."
+  },
+  {
+    "title": "移動ロボットによる3次元人物追跡のための2台のカメラを用いたパーティクルフィルタによる人物検出",
+    "authors": "橋本慧志, 本多明彦, 池勇勳, 梅田和昇",
+    "venue": "計測自動制御学会 システムインテグレーション部門講演会 (SI2018), 2018.12."
+  }
+]
