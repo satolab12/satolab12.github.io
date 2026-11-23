@@ -52,7 +52,10 @@ const renderers = {
 async function mount(el) {
   const limit = Number(el.dataset.limit) || 0;
   try {
-    const items = (await (await fetch(el.dataset.source)).json()).filter((i) => !i.hidden);
+    // no-cache: 毎回サーバに更新確認させる（GitHub Pages は max-age=600 を付けるため、
+    // これがないと push 後最大10分間ブラウザが古い JSON を表示し続ける）
+    const res = await fetch(el.dataset.source, { cache: "no-cache" });
+    const items = (await res.json()).filter((i) => !i.hidden);
     el.innerHTML = renderers[el.dataset.type](limit ? items.slice(0, limit) : items);
   } catch {
     el.innerHTML = '<p class="entry-sub">コンテンツを読み込めませんでした（ローカル確認時はHTTPサーバ経由で開いてください）。</p>';
