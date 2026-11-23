@@ -1,5 +1,11 @@
 [
   {
+    "title": "Analyzing Multi-Layer Visual Representations of Large Vision-Language Models for Anomaly Detection",
+    "authors": "Satoshi Hashimoto, Hitoshi Nishimura, Mori Kurokawa",
+    "venue": "arXiv, 2026.11.",
+    "url": "https://arxiv.org/abs/2611.27128"
+  },
+  {
     "title": "PA-VAD: Diffusion-Based Pseudo-Only Video Anomaly Detection via Domain-Aligned Memory Updates",
     "authors": "Satoshi Hashimoto, Hitoshi Nishimura, Yanan Wang and Mori Kurokawa",
     "venue": "European Conference on Computer Vision (ECCV), 2026.09.",
